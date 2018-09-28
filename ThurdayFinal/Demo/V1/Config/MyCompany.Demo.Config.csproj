@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE30CEAF-7133-48D8-A34F-1B8168E9EBC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCompany.Demo.Config</RootNamespace>
+    <AssemblyName>MyCompany.Demo.Config</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\DDK\V1\Drivers\MyCompany\Demo\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\DDK\V1\Drivers\MyCompany\Demo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CmDDK">
+      <HintPath>..\..\..\..\..\..\Bin\DDK\V1\CmDDK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CmHelpers">
+      <HintPath>..\..\..\..\..\..\Bin\DDK\V1\CmHelpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CmSymbols">
+      <HintPath>..\..\..\..\..\..\Bin\DDK\V1\CmSymbols.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.PhysicalUnits">
+      <HintPath>..\..\..\..\..\..\Bin\DDK\Shared\ThermoFisher\Dionex.PhysicalUnits.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Device\AutoSampler.cs" />
+    <Compile Include="Device\Pump.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device.cs" />
+    <Compile Include="Device\Demo.cs" />
+    <Compile Include="Device\Heater.cs" />
+    <Compile Include="Device\Detector.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SharedInstrumentsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SharedInstrumentsView.designer.cs">
+      <DependentUpon>SharedInstrumentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\InstrumentData.cs" />
+    <Compile Include="Util\StringExtensions.cs" />
+    <Compile Include="Util\Util.cs" />
+    <Compile Include="Util\Xml.cs" />
+    <Compile Include="Util\XmlCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SharedInstrumentsView.resx">
+      <DependentUpon>SharedInstrumentsView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyCompany.Demo.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Util\XmlCommand.xml" />
+    <Content Include="Read Me.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

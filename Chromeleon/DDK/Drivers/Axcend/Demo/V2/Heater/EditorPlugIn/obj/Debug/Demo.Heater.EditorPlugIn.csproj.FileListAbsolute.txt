@@ -1,0 +1,9 @@
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoHeater\MyCompany.Demo.Heater.EditorPlugIn.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoHeater\MyCompany.Demo.Heater.EditorPlugIn.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\Demo.Heater.EditorPlugIn.csprojAssemblyReference.cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\MyCompany.Demo.Heater.EditorPlugIn.HeaterPage.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\MyCompany.Demo.Heater.EditorPlugIn.Properties.Resources.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\Demo.Heater.EditorPlugIn.csproj.GenerateResource.cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\Demo.Heater.EditorPlugIn.csproj.CoreCompileInputs.cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\MyCompany.Demo.Heater.EditorPlugIn.dll
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V2\Heater\EditorPlugIn\obj\Debug\MyCompany.Demo.Heater.EditorPlugIn.pdb

@@ -1,0 +1,4 @@
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoPump\MyCompany.Demo.Pump.EditorPlugIn.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoPump\MyCompany.Demo.Pump.EditorPlugIn.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V2\Pump\EditorPlugIn\obj\Debug\MyCompany.Demo.Pump.EditorPlugIn.dll
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V2\Pump\EditorPlugIn\obj\Debug\MyCompany.Demo.Pump.EditorPlugIn.pdb

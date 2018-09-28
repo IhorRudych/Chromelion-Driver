@@ -1,0 +1,9 @@
+C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\MyCompany.Demo.bmp
+C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\MyCompany.Demo.dll
+C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\MyCompany.Demo.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V1\Driver\obj\Debug\Practice MyCompany.Demo.Driver.csprojResolveAssemblyReference.cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V1\Driver\obj\Debug\MyCompany.Demo.DriverInfo.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V1\Driver\obj\Debug\MyCompany.Demo.Properties.Resources.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V1\Driver\obj\Debug\Practice MyCompany.Demo.Driver.csproj.GenerateResource.Cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V1\Driver\obj\Debug\MyCompany.Demo.dll
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V1\Driver\obj\Debug\MyCompany.Demo.pdb

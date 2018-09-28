@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Driver>
+    <Device name="ChannelTest">
+      <Parameter name="Device Name">ChannelTest</Parameter>
+    </Device>
+    <Device name="FixedRateChannel">
+      <Parameter name="Device Name">FixedRateChannel</Parameter>
+    </Device>
+    <Device name="TimestampedChannel">
+      <Parameter name="Device Name">TimestampedChannel</Parameter>
+    </Device>
+    <Device name="Int64Channel">
+      <Parameter name="Device Name">Int64Channel</Parameter>
+    </Device>
+    <Device name="PDAChannel">
+      <Parameter name="Device Name">3DFIELD</Parameter>
+    </Device>
+  </Driver>
+</Configuration>

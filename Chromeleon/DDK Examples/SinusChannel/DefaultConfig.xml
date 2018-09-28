@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<Driver>
+    <Device name="Sinus Channel">
+      <Parameter name="Device Name">SinusChannel</Parameter>      
+    </Device>
+    <Device name="Timestamped Sinus Channel Ex">
+      <Parameter name="Device Name">TimestampSinusChannelEx</Parameter>
+    </Device>
+  </Driver>
+</Configuration>

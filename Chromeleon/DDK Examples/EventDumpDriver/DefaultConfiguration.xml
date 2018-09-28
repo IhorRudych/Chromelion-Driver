@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Driver>
+    <Device name="Example Device 1">
+      <Parameter name="Device Name">ExampleDevice1</Parameter>
+    </Device>
+  </Driver>
+</Configuration>

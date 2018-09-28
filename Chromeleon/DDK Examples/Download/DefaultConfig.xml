@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<Driver>
+    <Device name="Download Device 1">
+      <Parameter description="Just a name for the device" name="Device Name">DownloadDevice1</Parameter>
+    </Device>
+    <Device name="Download Device 2">
+      <Parameter description="Just a name for the device" name="Device Name">DownloadDevice2</Parameter>
+    </Device>
+  </Driver>
+</Configuration>

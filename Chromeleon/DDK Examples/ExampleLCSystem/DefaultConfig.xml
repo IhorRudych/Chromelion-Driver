@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<Driver>
+		<Device name="LC System">
+			<Parameter name="Device Name">LCSystem</Parameter>
+		</Device>
+		<Device name="Pump">
+			<Parameter name="Device Name">Pump</Parameter>
+		</Device>
+		<Device name="Sampler">
+			<Parameter name="Device Name">Sampler</Parameter>
+		</Device>
+		<Device name="Detector">
+			<Parameter name="Device Name">Detector</Parameter>
+		</Device>
+	</Driver>
+</Configuration>

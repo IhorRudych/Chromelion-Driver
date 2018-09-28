@@ -1,0 +1,54 @@
+﻿<XML>
+  <!-- Get Is Idle - Request -->
+  <Command>
+    <Name>GetIsIdle</Name>
+    <IsSimulated>True</IsSimulated>
+    <Request />
+  </Command>
+
+  <!-- Get Is Idle - Response -->
+  <Command>
+    <Name>GetIsIdle</Name>
+    <IsSimulated>True</IsSimulated>
+
+    <Request />
+
+    <Response>
+      <IsIdle>True</IsIdle>
+    </Response>
+  </Command>
+
+
+  <!-- Get Firmware Data Request -->
+  <Command>
+    <Name>GetFirmwareData</Name>
+    <IsSimulated>True</IsSimulated>
+    <Request />
+  </Command>
+
+  <!-- Get Firmware Data Request -->
+  <Command>
+    <Name>GetFirmwareData</Name>
+    <IsSimulated>True</IsSimulated>
+
+    <Request />
+
+    <Response>
+      <FirmwareVersion>111</FirmwareVersion>
+      <FirmwareSerialNumber>222</FirmwareSerialNumber>
+      <FirmwareUsbAddress>333</FirmwareUsbAddress>
+    </Response>
+  </Command>
+
+  <!-- Get Firmware Data Request - returns Error -->
+  <Command>
+    <Name>GetFirmwareData</Name>
+    <Response>
+      <Exception>
+        <Type>System.InvalidOperationException</Type>
+        <Text>Command Error Text</Text>
+      </Exception>
+    </Response>
+    <Request />
+  </Command>
+</XML>

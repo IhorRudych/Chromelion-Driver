@@ -1,0 +1,7 @@
+For trainees Install Chromeleon in:
+C:\Thermo\Chromeleon
+
+For Thermo Developers:
+Execute
+CM 7 Folder Link Bin Create.cmd
+To link C:\Thermo\Chromeleon\Bin to C:\CM7\Trunk\Output\Debug

@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<Symbols System="Demo_1">
+  <Device Name="Demo_Name" Level="Normal" Description="Help text for device Demo_Id with name &quot;Demo_Name&quot;" Type="general">
+    <Property Name="Connected" Level="Normal" Description="Indicates whether the device is connected to the data system, i.e. under computer control. &#xD;&#xA;See also: Connect, Disconnect." Read-Only="false" Type="bool">
+      <Enum-Value Value="0" Name="Disconnected" />
+      <Enum-Value Value="1" Name="Connected" />
+    </Property>
+    <Command Name="Connect" Level="Normal" Description="Connects the device to the data system, enables computer control. &#xD;&#xA;See also: Connected, Disconnect." />
+    <Command Name="Disconnect" Level="Normal" Description="Disconnects the device from the data system, enables manual control from the device's front panel. &#xD;&#xA;See also: Connected, Connect." />
+    <Property Name="_CommandQueueLevel" Level="Service" Description="Shows the maximum number of bytes in the command queue since last connect." Read-Only="true" Type="int" Min="0" Max="2097152" Unit="" />
+    <Property Name="_PortQueueLevel" Level="Service" Description="Shows the maximum number of bytes in the port queue since last connect." Read-Only="true" Type="int" Min="0" Max="2097152" Unit="" />
+    <Property Name="_ReplyQueueLevel" Level="Service" Description="Shows the maximum number of bytes in the reply queue since last connect." Read-Only="true" Type="int" Min="0" Max="2097152" Unit="" />
+    <Property Name="_AuditQueueLevel" Level="Service" Description="Shows the maximum number of bytes in the audit queue since last connect." Read-Only="true" Type="int" Min="0" Max="2097152" Unit="" />
+    <Property Name="_MaxLatencyToDriver" Level="Service" Description="Shows the maximum latency of a command or property assignment in [ms]." Read-Only="true" Type="int" Min="0" Max="10000" Unit="ms" />
+    <Property Name="_MaxLatencyFromDriver" Level="Service" Description="Shows the maximum latency of a property update in [ms]." Read-Only="true" Type="int" Min="0" Max="10000" Unit="ms" />
+    <Property Name="_AverageLatencyToDriver" Level="Service" Description="Shows the average latency of a command or property assignment in [ms]." Read-Only="true" Type="int" Min="0" Max="10000" Unit="ms" />
+    <Property Name="_AverageLatencyFromDriver" Level="Service" Description="Shows the average latency of a property update in [ms]." Read-Only="true" Type="int" Min="0" Max="10000" Unit="ms" />
+    <Property Name="_TraceLevel" Level="Service" Description="Trace level configuration. Off = No tracing. Error = Trace error messages. Warning = Trace errors and warnings. Info = Trace errors, warnings and informational messages. Verbose = Output all trace messages." Read-Only="true" Type="int" Min="0" Max="4" Unit="">
+      <Enum-Value Value="0" Name="Off" />
+      <Enum-Value Value="1" Name="Error" />
+      <Enum-Value Value="2" Name="Warning" />
+      <Enum-Value Value="3" Name="Info" />
+      <Enum-Value Value="4" Name="Verbose" />
+    </Property>
+    <Property Name="_GcCollectionCount0" Level="Service" Description="Returns the number of times garbage collection has occurred for the specified generation of objects." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="_GcCollectionCount1" Level="Service" Description="Returns the number of times garbage collection has occurred for the specified generation of objects." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="_GcCollectionCount2" Level="Service" Description="Returns the number of times garbage collection has occurred for the specified generation of objects." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="Manufacturer" Level="Service" Description="Manufacturer of the driver." Read-Only="true" Type="string" Max-Length="29" />
+    <Property Name="DriverManufacturer" Level="Expert" Description="Manufacturer of the driver." Read-Only="true" Type="string" Max-Length="29" />
+    <Property Name="DriverVersion" Level="Expert" Description="Version of the driver." Read-Only="true" Type="string" Max-Length="7" />
+    <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Demo_Id" />
+    <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="Demo" />
+    <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+    <Property Name="LogInFile" Level="Service" Description="" Read-Only="false" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Property Name="IsSimulated" Level="Normal" Description="" Read-Only="true" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Property Name="FirmwareUsbAddress" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="FirmwareVersion" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="1.2.3" />
+    <Property Name="SerialNo" Level="Normal" Description="The serial number of the module." Read-Only="true" Type="string" Max-Length="100" />
+    <Property Name="TaskName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="TaskNamePrevious" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="TaskPreviousErrorText" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="CommunicationState" Level="Normal" Description="" Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+      <Enum-Value Value="0" Name="NotCommunicating" />
+      <Enum-Value Value="1" Name="Connecting" />
+      <Enum-Value Value="2" Name="Communicating" />
+      <Enum-Value Value="3" Name="Disconnecting" />
+    </Property>
+    <Property Name="BehaviorStatePrev" Level="Normal" Description="" Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+      <Enum-Value Value="0" Name="Idle" />
+      <Enum-Value Value="1" Name="Busy" />
+      <Enum-Value Value="2" Name="Stopping" />
+      <Enum-Value Value="3" Name="Aborting" />
+    </Property>
+    <Property Name="BehaviorState" Level="Normal" Description="" Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+      <Enum-Value Value="0" Name="Idle" />
+      <Enum-Value Value="1" Name="Busy" />
+      <Enum-Value Value="2" Name="Stopping" />
+      <Enum-Value Value="3" Name="Aborting" />
+    </Property>
+    <Property Name="ProcessStep" Level="Normal" Description="" Read-Only="true" Type="int" Min="-2147483648" Max="2147483648" Unit="" />
+    <Command Name="CommandTest" Level="Normal" Description="Test command description">
+      <Parameter Name="Param_1_Int" Description="Integer &gt; 0" Optional="true" ByName="false" Type="int" Min="0" Max="1000" Unit="" />
+      <Parameter Name="Param_2_Double" Description="Double Percent [0, 100]" Optional="true" ByName="false" Type="float" Digits="2" Min="0.00" Max="100.00" Unit="%" />
+      <Parameter Name="Param_3_Bool" Description="Bool" Optional="true" ByName="false" Type="bool">
+        <Enum-Value Value="0" Name="False" />
+        <Enum-Value Value="1" Name="True" />
+      </Parameter>
+      <Parameter Name="Param_4_String" Description="String 1 to 20 characters" Optional="true" ByName="false" Type="string" Max-Length="20" />
+    </Command>
+    <Command Name="Start" Level="Normal" Description="" />
+    <Command Name="Stop" Level="Normal" Description="" />
+    <Property Name="DriverID" Level="Expert" Description="Unique Driver Identifier." Read-Only="true" Type="string" Max-Length="14" Value="MyCompany.Demo" />
+  </Device>
+  <Device Name="Heater_Name" Level="Normal" Description="Help text for device Heater_Id with name &quot;Heater_Name&quot;" Type="general">
+    <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Heater_Id" />
+    <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="Heater" />
+    <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+    <Property Name="Ready" Level="Normal" Description="Indicates that the module is ready for the next injection." Read-Only="true" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Struct Name="Product" Level="Normal" Description="Product Help Text">
+      <Property Name="Name" Level="Normal" Description="" Read-Only="false" LDefault="true" RDefault="true" Type="string" Max-Length="300" />
+      <Property Name="Description" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    </Struct>
+    <Property Name="Power" Level="Normal" Description="" Read-Only="true" Type="float" Digits="3" Min="0.000" Unit="W" />
+    <Struct Name="Temperature" Level="Normal" Description="Oven Temperature">
+      <Property Name="Control" Level="Normal" Description="" Read-Only="false" Type="bool">
+        <Enum-Value Value="0" Name="Off" />
+        <Enum-Value Value="1" Name="On" />
+      </Property>
+      <Property Name="LowerLimit" Level="Normal" Read-Only="false" Type="float" Digits="1" Min="0.0" Max="100.0" Unit="°C" />
+      <Property Name="UpperLimit" Level="Normal" Read-Only="false" Type="float" Digits="1" Min="0.0" Max="100.0" Unit="°C" />
+      <Property Name="Nominal" Level="Normal" Read-Only="false" LDefault="true" Type="float" Digits="1" Min="0.0" Max="100.0" Unit="°C" />
+      <Property Name="Value" Level="Normal" Read-Only="true" RDefault="true" Type="float" Digits="1" Min="-340282346638529000000000000000000000000.0" Unit="°C" />
+    </Struct>
+    <Property Name="DriverID" Level="Expert" Description="Unique Driver Identifier." Read-Only="true" Type="string" Max-Length="14" Value="MyCompany.Demo" />
+  </Device>
+  <Device Name="Pump_Name" Level="Normal" Description="Help text for device Pump_Id with name &quot;Pump_Name&quot;" Type="general">
+    <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Pump_Id" />
+    <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="Pump" />
+    <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+    <Property Name="Ready" Level="Normal" Description="Indicates that the module is ready for the next injection." Read-Only="true" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Struct Name="Pressure" Level="Normal" Description="The pump pressure.">
+      <Property Name="Value" Level="Normal" Read-Only="true" RDefault="true" Type="float" Digits="3" Min="0.000" Max="400.000" Unit="bar" />
+      <Property Name="LowerLimit" Level="Normal" Read-Only="false" Type="float" Digits="3" Min="0.000" Max="400.000" Unit="bar" />
+      <Property Name="UpperLimit" Level="Normal" Read-Only="false" Type="float" Digits="3" Min="0.000" Max="400.000" Unit="bar" />
+    </Struct>
+    <Struct Name="Flow" Level="Normal" Description="Total flow through the pump.">
+      <Property Name="Nominal" Level="Normal" Description="Sets and displays the nominal value of this parameter." Read-Only="false" LDefault="true" Type="float" Digits="3" Min="0.000" Max="10.000" Unit="ml/min" Gradient="true" />
+      <Property Name="Value" Level="Normal" Description="Displays the actual value of this parameter." Read-Only="true" RDefault="true" Type="float" Digits="3" Min="0.000" Max="10.000" Unit="ml/min" Gradient="true" />
+    </Struct>
+    <Struct Name="%A" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow.">
+      <Property Name="Value" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow." Read-Only="true" RDefault="true" Type="float" Digits="2" Min="0.00" Max="100.00" Unit="%" />
+      <Property Name="Equate" Level="Normal" Description="User-selectable designation of this solvent component." Read-Only="false" Type="string" Max-Length="64" />
+    </Struct>
+    <Struct Name="%B" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow.">
+      <Property Name="Value" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow." Read-Only="false" LDefault="true" RDefault="true" Type="float" Digits="2" Min="0.00" Max="100.00" Unit="%" Gradient="true" />
+      <Property Name="Equate" Level="Normal" Description="User-selectable designation of this solvent component." Read-Only="false" Type="string" Max-Length="64" />
+    </Struct>
+    <Struct Name="%C" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow.">
+      <Property Name="Value" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow." Read-Only="false" LDefault="true" RDefault="true" Type="float" Digits="2" Min="0.00" Max="100.00" Unit="%" Gradient="true" />
+      <Property Name="Equate" Level="Normal" Description="User-selectable designation of this solvent component." Read-Only="false" Type="string" Max-Length="64" />
+    </Struct>
+    <Struct Name="%D" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow.">
+      <Property Name="Value" Level="Normal" Description="Partial flow of this component, expressed in percent of the total flow." Read-Only="false" LDefault="true" RDefault="true" Type="float" Digits="2" Min="0.00" Max="100.00" Unit="%" Gradient="true" />
+      <Property Name="Equate" Level="Normal" Description="User-selectable designation of this solvent component." Read-Only="false" Type="string" Max-Length="64" />
+    </Struct>
+    <Property Name="DriverID" Level="Expert" Description="Unique Driver Identifier." Read-Only="true" Type="string" Max-Length="14" Value="MyCompany.Demo" />
+  </Device>
+  <Device Name="AutoSampler_Name" Level="Normal" Description="Help text for device AutoSampler_Id with name &quot;AutoSampler_Name&quot;" Type="general">
+    <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="AutoSampler_Id" />
+    <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="AutoSampler" />
+    <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+    <Property Name="Ready" Level="Normal" Description="Indicates that the module is ready for the next injection." Read-Only="true" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Command Name="Inject" Level="Normal" Description="Injects a sample.">
+      <Parameter Name="Position" Description="" Optional="true" ByName="false" Type="int" Min="1" Max="246" Unit="">
+        <Enum-Value Value="151" Name="A151" />
+        <Enum-Value Value="152" Name="A152" />
+        <Enum-Value Value="153" Name="A153" />
+        <Enum-Value Value="154" Name="A154" />
+        <Enum-Value Value="155" Name="A155" />
+        <Enum-Value Value="156" Name="A156" />
+        <Enum-Value Value="157" Name="A157" />
+        <Enum-Value Value="158" Name="A158" />
+        <Enum-Value Value="159" Name="A159" />
+        <Enum-Value Value="160" Name="A160" />
+        <Enum-Value Value="161" Name="A161" />
+        <Enum-Value Value="162" Name="A162" />
+        <Enum-Value Value="163" Name="A163" />
+        <Enum-Value Value="164" Name="A164" />
+        <Enum-Value Value="165" Name="A165" />
+        <Enum-Value Value="166" Name="A166" />
+        <Enum-Value Value="167" Name="A167" />
+        <Enum-Value Value="168" Name="A168" />
+        <Enum-Value Value="169" Name="A169" />
+        <Enum-Value Value="170" Name="A170" />
+        <Enum-Value Value="171" Name="A171" />
+        <Enum-Value Value="172" Name="A172" />
+        <Enum-Value Value="173" Name="A173" />
+        <Enum-Value Value="174" Name="A174" />
+        <Enum-Value Value="175" Name="A175" />
+        <Enum-Value Value="176" Name="A176" />
+        <Enum-Value Value="177" Name="A177" />
+        <Enum-Value Value="178" Name="A178" />
+        <Enum-Value Value="179" Name="A179" />
+        <Enum-Value Value="180" Name="A180" />
+        <Enum-Value Value="181" Name="A181" />
+        <Enum-Value Value="182" Name="A182" />
+        <Enum-Value Value="183" Name="A183" />
+        <Enum-Value Value="184" Name="A184" />
+        <Enum-Value Value="185" Name="A185" />
+        <Enum-Value Value="186" Name="A186" />
+        <Enum-Value Value="187" Name="A187" />
+        <Enum-Value Value="188" Name="A188" />
+        <Enum-Value Value="189" Name="A189" />
+        <Enum-Value Value="190" Name="A190" />
+        <Enum-Value Value="191" Name="A191" />
+        <Enum-Value Value="192" Name="A192" />
+        <Enum-Value Value="193" Name="A193" />
+        <Enum-Value Value="194" Name="A194" />
+        <Enum-Value Value="195" Name="A195" />
+        <Enum-Value Value="196" Name="A196" />
+        <Enum-Value Value="197" Name="A197" />
+        <Enum-Value Value="198" Name="A198" />
+        <Enum-Value Value="199" Name="A199" />
+        <Enum-Value Value="200" Name="A200" />
+        <Enum-Value Value="201" Name="A201" />
+        <Enum-Value Value="202" Name="A202" />
+        <Enum-Value Value="203" Name="A203" />
+        <Enum-Value Value="204" Name="A204" />
+        <Enum-Value Value="205" Name="A205" />
+        <Enum-Value Value="206" Name="A206" />
+        <Enum-Value Value="207" Name="A207" />
+        <Enum-Value Value="208" Name="A208" />
+        <Enum-Value Value="209" Name="A209" />
+        <Enum-Value Value="210" Name="A210" />
+        <Enum-Value Value="211" Name="A211" />
+        <Enum-Value Value="212" Name="A212" />
+        <Enum-Value Value="213" Name="A213" />
+        <Enum-Value Value="214" Name="A214" />
+        <Enum-Value Value="215" Name="A215" />
+        <Enum-Value Value="216" Name="A216" />
+        <Enum-Value Value="217" Name="A217" />
+        <Enum-Value Value="218" Name="A218" />
+        <Enum-Value Value="219" Name="A219" />
+        <Enum-Value Value="220" Name="A220" />
+        <Enum-Value Value="221" Name="A221" />
+        <Enum-Value Value="222" Name="A222" />
+        <Enum-Value Value="223" Name="A223" />
+        <Enum-Value Value="224" Name="A224" />
+        <Enum-Value Value="225" Name="A225" />
+        <Enum-Value Value="226" Name="A226" />
+        <Enum-Value Value="227" Name="A227" />
+        <Enum-Value Value="228" Name="A228" />
+        <Enum-Value Value="229" Name="A229" />
+        <Enum-Value Value="230" Name="A230" />
+        <Enum-Value Value="231" Name="A231" />
+        <Enum-Value Value="232" Name="A232" />
+        <Enum-Value Value="233" Name="A233" />
+        <Enum-Value Value="234" Name="A234" />
+        <Enum-Value Value="235" Name="A235" />
+        <Enum-Value Value="236" Name="A236" />
+        <Enum-Value Value="237" Name="A237" />
+        <Enum-Value Value="238" Name="A238" />
+        <Enum-Value Value="239" Name="A239" />
+        <Enum-Value Value="240" Name="A240" />
+        <Enum-Value Value="241" Name="A241" />
+        <Enum-Value Value="242" Name="A242" />
+        <Enum-Value Value="243" Name="A243" />
+        <Enum-Value Value="244" Name="A244" />
+        <Enum-Value Value="245" Name="A245" />
+        <Enum-Value Value="246" Name="A246" />
+        <Enum-Value Value="247" Name="A247" />
+        <Enum-Value Value="248" Name="A248" />
+        <Enum-Value Value="249" Name="A249" />
+        <Enum-Value Value="250" Name="A250" />
+        <Enum-Value Value="251" Name="A251" />
+        <Enum-Value Value="252" Name="A252" />
+        <Enum-Value Value="253" Name="A253" />
+        <Enum-Value Value="254" Name="A254" />
+        <Enum-Value Value="255" Name="A255" />
+        <Enum-Value Value="256" Name="A256" />
+        <Enum-Value Value="257" Name="A257" />
+        <Enum-Value Value="258" Name="A258" />
+        <Enum-Value Value="259" Name="A259" />
+        <Enum-Value Value="260" Name="A260" />
+        <Enum-Value Value="261" Name="A261" />
+        <Enum-Value Value="262" Name="A262" />
+        <Enum-Value Value="263" Name="A263" />
+        <Enum-Value Value="264" Name="A264" />
+        <Enum-Value Value="265" Name="A265" />
+        <Enum-Value Value="266" Name="A266" />
+        <Enum-Value Value="267" Name="A267" />
+        <Enum-Value Value="268" Name="A268" />
+        <Enum-Value Value="269" Name="A269" />
+        <Enum-Value Value="270" Name="A270" />
+        <Enum-Value Value="271" Name="A271" />
+        <Enum-Value Value="272" Name="A272" />
+        <Enum-Value Value="273" Name="A273" />
+        <Enum-Value Value="274" Name="A274" />
+        <Enum-Value Value="275" Name="A275" />
+        <Enum-Value Value="276" Name="A276" />
+        <Enum-Value Value="277" Name="A277" />
+        <Enum-Value Value="278" Name="A278" />
+        <Enum-Value Value="279" Name="A279" />
+        <Enum-Value Value="280" Name="A280" />
+        <Enum-Value Value="281" Name="A281" />
+        <Enum-Value Value="282" Name="A282" />
+        <Enum-Value Value="283" Name="A283" />
+        <Enum-Value Value="284" Name="A284" />
+        <Enum-Value Value="285" Name="A285" />
+        <Enum-Value Value="286" Name="A286" />
+        <Enum-Value Value="287" Name="A287" />
+        <Enum-Value Value="288" Name="A288" />
+        <Enum-Value Value="289" Name="A289" />
+        <Enum-Value Value="290" Name="A290" />
+        <Enum-Value Value="291" Name="A291" />
+        <Enum-Value Value="292" Name="A292" />
+        <Enum-Value Value="293" Name="A293" />
+        <Enum-Value Value="294" Name="A294" />
+        <Enum-Value Value="295" Name="A295" />
+        <Enum-Value Value="296" Name="A296" />
+        <Enum-Value Value="297" Name="A297" />
+        <Enum-Value Value="298" Name="A298" />
+        <Enum-Value Value="299" Name="A299" />
+        <Enum-Value Value="300" Name="A300" />
+        <Enum-Value Value="1" Name="B1" />
+        <Enum-Value Value="2" Name="B2" />
+        <Enum-Value Value="3" Name="B3" />
+        <Enum-Value Value="4" Name="B4" />
+        <Enum-Value Value="5" Name="B5" />
+        <Enum-Value Value="6" Name="B6" />
+        <Enum-Value Value="7" Name="B7" />
+        <Enum-Value Value="8" Name="B8" />
+        <Enum-Value Value="9" Name="B9" />
+        <Enum-Value Value="10" Name="B10" />
+        <Enum-Value Value="11" Name="B11" />
+        <Enum-Value Value="12" Name="B12" />
+        <Enum-Value Value="13" Name="B13" />
+        <Enum-Value Value="14" Name="B14" />
+        <Enum-Value Value="15" Name="B15" />
+        <Enum-Value Value="16" Name="B16" />
+        <Enum-Value Value="17" Name="B17" />
+        <Enum-Value Value="18" Name="B18" />
+        <Enum-Value Value="19" Name="B19" />
+        <Enum-Value Value="20" Name="B20" />
+        <Enum-Value Value="21" Name="B21" />
+        <Enum-Value Value="22" Name="B22" />
+        <Enum-Value Value="23" Name="B23" />
+        <Enum-Value Value="24" Name="B24" />
+        <Enum-Value Value="25" Name="B25" />
+        <Enum-Value Value="26" Name="B26" />
+        <Enum-Value Value="27" Name="B27" />
+        <Enum-Value Value="28" Name="B28" />
+        <Enum-Value Value="29" Name="B29" />
+        <Enum-Value Value="30" Name="B30" />
+        <Enum-Value Value="31" Name="B31" />
+        <Enum-Value Value="32" Name="B32" />
+        <Enum-Value Value="33" Name="B33" />
+        <Enum-Value Value="34" Name="B34" />
+        <Enum-Value Value="35" Name="B35" />
+        <Enum-Value Value="36" Name="B36" />
+        <Enum-Value Value="37" Name="B37" />
+        <Enum-Value Value="38" Name="B38" />
+        <Enum-Value Value="39" Name="B39" />
+        <Enum-Value Value="40" Name="B40" />
+        <Enum-Value Value="41" Name="B41" />
+        <Enum-Value Value="42" Name="B42" />
+        <Enum-Value Value="43" Name="B43" />
+        <Enum-Value Value="44" Name="B44" />
+        <Enum-Value Value="45" Name="B45" />
+        <Enum-Value Value="46" Name="B46" />
+        <Enum-Value Value="47" Name="B47" />
+        <Enum-Value Value="48" Name="B48" />
+        <Enum-Value Value="49" Name="B49" />
+        <Enum-Value Value="50" Name="B50" />
+        <Enum-Value Value="51" Name="B51" />
+        <Enum-Value Value="52" Name="B52" />
+        <Enum-Value Value="53" Name="B53" />
+        <Enum-Value Value="54" Name="B54" />
+        <Enum-Value Value="55" Name="B55" />
+        <Enum-Value Value="56" Name="B56" />
+        <Enum-Value Value="57" Name="B57" />
+        <Enum-Value Value="58" Name="B58" />
+        <Enum-Value Value="59" Name="B59" />
+        <Enum-Value Value="60" Name="B60" />
+        <Enum-Value Value="61" Name="B61" />
+        <Enum-Value Value="62" Name="B62" />
+        <Enum-Value Value="63" Name="B63" />
+        <Enum-Value Value="64" Name="B64" />
+        <Enum-Value Value="65" Name="B65" />
+        <Enum-Value Value="66" Name="B66" />
+        <Enum-Value Value="67" Name="B67" />
+        <Enum-Value Value="68" Name="B68" />
+        <Enum-Value Value="69" Name="B69" />
+        <Enum-Value Value="70" Name="B70" />
+        <Enum-Value Value="71" Name="B71" />
+        <Enum-Value Value="72" Name="B72" />
+        <Enum-Value Value="73" Name="B73" />
+        <Enum-Value Value="74" Name="B74" />
+        <Enum-Value Value="75" Name="B75" />
+        <Enum-Value Value="76" Name="B76" />
+        <Enum-Value Value="77" Name="B77" />
+        <Enum-Value Value="78" Name="B78" />
+        <Enum-Value Value="79" Name="B79" />
+        <Enum-Value Value="80" Name="B80" />
+        <Enum-Value Value="81" Name="B81" />
+        <Enum-Value Value="82" Name="B82" />
+        <Enum-Value Value="83" Name="B83" />
+        <Enum-Value Value="84" Name="B84" />
+        <Enum-Value Value="85" Name="B85" />
+        <Enum-Value Value="86" Name="B86" />
+        <Enum-Value Value="87" Name="B87" />
+        <Enum-Value Value="88" Name="B88" />
+        <Enum-Value Value="89" Name="B89" />
+        <Enum-Value Value="90" Name="B90" />
+        <Enum-Value Value="91" Name="B91" />
+        <Enum-Value Value="92" Name="B92" />
+        <Enum-Value Value="93" Name="B93" />
+        <Enum-Value Value="94" Name="B94" />
+        <Enum-Value Value="95" Name="B95" />
+        <Enum-Value Value="96" Name="B96" />
+      </Parameter>
+      <Parameter Name="Volume" Description="" Optional="true" ByName="false" Type="float" Digits="3" Min="0.100" Max="30.000" Unit="µl" />
+      <Parameter Name="Blank" Description="" Optional="true" ByName="true" Type="bool">
+        <Enum-Value Value="0" Name="Skip" />
+        <Enum-Value Value="1" Name="Inject" />
+      </Parameter>
+    </Command>
+    <Property Name="Volume" Level="Normal" Description="The injection volume." Read-Only="false" Type="float" Digits="3" Min="0.100" Max="30.000" Unit="µl" />
+    <Property Name="Position" Level="Normal" Description="The sample's position on the sample tray." Read-Only="false" Type="int" Min="1" Max="246" Unit="">
+      <Enum-Value Value="151" Name="A151" />
+      <Enum-Value Value="152" Name="A152" />
+      <Enum-Value Value="153" Name="A153" />
+      <Enum-Value Value="154" Name="A154" />
+      <Enum-Value Value="155" Name="A155" />
+      <Enum-Value Value="156" Name="A156" />
+      <Enum-Value Value="157" Name="A157" />
+      <Enum-Value Value="158" Name="A158" />
+      <Enum-Value Value="159" Name="A159" />
+      <Enum-Value Value="160" Name="A160" />
+      <Enum-Value Value="161" Name="A161" />
+      <Enum-Value Value="162" Name="A162" />
+      <Enum-Value Value="163" Name="A163" />
+      <Enum-Value Value="164" Name="A164" />
+      <Enum-Value Value="165" Name="A165" />
+      <Enum-Value Value="166" Name="A166" />
+      <Enum-Value Value="167" Name="A167" />
+      <Enum-Value Value="168" Name="A168" />
+      <Enum-Value Value="169" Name="A169" />
+      <Enum-Value Value="170" Name="A170" />
+      <Enum-Value Value="171" Name="A171" />
+      <Enum-Value Value="172" Name="A172" />
+      <Enum-Value Value="173" Name="A173" />
+      <Enum-Value Value="174" Name="A174" />
+      <Enum-Value Value="175" Name="A175" />
+      <Enum-Value Value="176" Name="A176" />
+      <Enum-Value Value="177" Name="A177" />
+      <Enum-Value Value="178" Name="A178" />
+      <Enum-Value Value="179" Name="A179" />
+      <Enum-Value Value="180" Name="A180" />
+      <Enum-Value Value="181" Name="A181" />
+      <Enum-Value Value="182" Name="A182" />
+      <Enum-Value Value="183" Name="A183" />
+      <Enum-Value Value="184" Name="A184" />
+      <Enum-Value Value="185" Name="A185" />
+      <Enum-Value Value="186" Name="A186" />
+      <Enum-Value Value="187" Name="A187" />
+      <Enum-Value Value="188" Name="A188" />
+      <Enum-Value Value="189" Name="A189" />
+      <Enum-Value Value="190" Name="A190" />
+      <Enum-Value Value="191" Name="A191" />
+      <Enum-Value Value="192" Name="A192" />
+      <Enum-Value Value="193" Name="A193" />
+      <Enum-Value Value="194" Name="A194" />
+      <Enum-Value Value="195" Name="A195" />
+      <Enum-Value Value="196" Name="A196" />
+      <Enum-Value Value="197" Name="A197" />
+      <Enum-Value Value="198" Name="A198" />
+      <Enum-Value Value="199" Name="A199" />
+      <Enum-Value Value="200" Name="A200" />
+      <Enum-Value Value="201" Name="A201" />
+      <Enum-Value Value="202" Name="A202" />
+      <Enum-Value Value="203" Name="A203" />
+      <Enum-Value Value="204" Name="A204" />
+      <Enum-Value Value="205" Name="A205" />
+      <Enum-Value Value="206" Name="A206" />
+      <Enum-Value Value="207" Name="A207" />
+      <Enum-Value Value="208" Name="A208" />
+      <Enum-Value Value="209" Name="A209" />
+      <Enum-Value Value="210" Name="A210" />
+      <Enum-Value Value="211" Name="A211" />
+      <Enum-Value Value="212" Name="A212" />
+      <Enum-Value Value="213" Name="A213" />
+      <Enum-Value Value="214" Name="A214" />
+      <Enum-Value Value="215" Name="A215" />
+      <Enum-Value Value="216" Name="A216" />
+      <Enum-Value Value="217" Name="A217" />
+      <Enum-Value Value="218" Name="A218" />
+      <Enum-Value Value="219" Name="A219" />
+      <Enum-Value Value="220" Name="A220" />
+      <Enum-Value Value="221" Name="A221" />
+      <Enum-Value Value="222" Name="A222" />
+      <Enum-Value Value="223" Name="A223" />
+      <Enum-Value Value="224" Name="A224" />
+      <Enum-Value Value="225" Name="A225" />
+      <Enum-Value Value="226" Name="A226" />
+      <Enum-Value Value="227" Name="A227" />
+      <Enum-Value Value="228" Name="A228" />
+      <Enum-Value Value="229" Name="A229" />
+      <Enum-Value Value="230" Name="A230" />
+      <Enum-Value Value="231" Name="A231" />
+      <Enum-Value Value="232" Name="A232" />
+      <Enum-Value Value="233" Name="A233" />
+      <Enum-Value Value="234" Name="A234" />
+      <Enum-Value Value="235" Name="A235" />
+      <Enum-Value Value="236" Name="A236" />
+      <Enum-Value Value="237" Name="A237" />
+      <Enum-Value Value="238" Name="A238" />
+      <Enum-Value Value="239" Name="A239" />
+      <Enum-Value Value="240" Name="A240" />
+      <Enum-Value Value="241" Name="A241" />
+      <Enum-Value Value="242" Name="A242" />
+      <Enum-Value Value="243" Name="A243" />
+      <Enum-Value Value="244" Name="A244" />
+      <Enum-Value Value="245" Name="A245" />
+      <Enum-Value Value="246" Name="A246" />
+      <Enum-Value Value="247" Name="A247" />
+      <Enum-Value Value="248" Name="A248" />
+      <Enum-Value Value="249" Name="A249" />
+      <Enum-Value Value="250" Name="A250" />
+      <Enum-Value Value="251" Name="A251" />
+      <Enum-Value Value="252" Name="A252" />
+      <Enum-Value Value="253" Name="A253" />
+      <Enum-Value Value="254" Name="A254" />
+      <Enum-Value Value="255" Name="A255" />
+      <Enum-Value Value="256" Name="A256" />
+      <Enum-Value Value="257" Name="A257" />
+      <Enum-Value Value="258" Name="A258" />
+      <Enum-Value Value="259" Name="A259" />
+      <Enum-Value Value="260" Name="A260" />
+      <Enum-Value Value="261" Name="A261" />
+      <Enum-Value Value="262" Name="A262" />
+      <Enum-Value Value="263" Name="A263" />
+      <Enum-Value Value="264" Name="A264" />
+      <Enum-Value Value="265" Name="A265" />
+      <Enum-Value Value="266" Name="A266" />
+      <Enum-Value Value="267" Name="A267" />
+      <Enum-Value Value="268" Name="A268" />
+      <Enum-Value Value="269" Name="A269" />
+      <Enum-Value Value="270" Name="A270" />
+      <Enum-Value Value="271" Name="A271" />
+      <Enum-Value Value="272" Name="A272" />
+      <Enum-Value Value="273" Name="A273" />
+      <Enum-Value Value="274" Name="A274" />
+      <Enum-Value Value="275" Name="A275" />
+      <Enum-Value Value="276" Name="A276" />
+      <Enum-Value Value="277" Name="A277" />
+      <Enum-Value Value="278" Name="A278" />
+      <Enum-Value Value="279" Name="A279" />
+      <Enum-Value Value="280" Name="A280" />
+      <Enum-Value Value="281" Name="A281" />
+      <Enum-Value Value="282" Name="A282" />
+      <Enum-Value Value="283" Name="A283" />
+      <Enum-Value Value="284" Name="A284" />
+      <Enum-Value Value="285" Name="A285" />
+      <Enum-Value Value="286" Name="A286" />
+      <Enum-Value Value="287" Name="A287" />
+      <Enum-Value Value="288" Name="A288" />
+      <Enum-Value Value="289" Name="A289" />
+      <Enum-Value Value="290" Name="A290" />
+      <Enum-Value Value="291" Name="A291" />
+      <Enum-Value Value="292" Name="A292" />
+      <Enum-Value Value="293" Name="A293" />
+      <Enum-Value Value="294" Name="A294" />
+      <Enum-Value Value="295" Name="A295" />
+      <Enum-Value Value="296" Name="A296" />
+      <Enum-Value Value="297" Name="A297" />
+      <Enum-Value Value="298" Name="A298" />
+      <Enum-Value Value="299" Name="A299" />
+      <Enum-Value Value="300" Name="A300" />
+      <Enum-Value Value="1" Name="B1" />
+      <Enum-Value Value="2" Name="B2" />
+      <Enum-Value Value="3" Name="B3" />
+      <Enum-Value Value="4" Name="B4" />
+      <Enum-Value Value="5" Name="B5" />
+      <Enum-Value Value="6" Name="B6" />
+      <Enum-Value Value="7" Name="B7" />
+      <Enum-Value Value="8" Name="B8" />
+      <Enum-Value Value="9" Name="B9" />
+      <Enum-Value Value="10" Name="B10" />
+      <Enum-Value Value="11" Name="B11" />
+      <Enum-Value Value="12" Name="B12" />
+      <Enum-Value Value="13" Name="B13" />
+      <Enum-Value Value="14" Name="B14" />
+      <Enum-Value Value="15" Name="B15" />
+      <Enum-Value Value="16" Name="B16" />
+      <Enum-Value Value="17" Name="B17" />
+      <Enum-Value Value="18" Name="B18" />
+      <Enum-Value Value="19" Name="B19" />
+      <Enum-Value Value="20" Name="B20" />
+      <Enum-Value Value="21" Name="B21" />
+      <Enum-Value Value="22" Name="B22" />
+      <Enum-Value Value="23" Name="B23" />
+      <Enum-Value Value="24" Name="B24" />
+      <Enum-Value Value="25" Name="B25" />
+      <Enum-Value Value="26" Name="B26" />
+      <Enum-Value Value="27" Name="B27" />
+      <Enum-Value Value="28" Name="B28" />
+      <Enum-Value Value="29" Name="B29" />
+      <Enum-Value Value="30" Name="B30" />
+      <Enum-Value Value="31" Name="B31" />
+      <Enum-Value Value="32" Name="B32" />
+      <Enum-Value Value="33" Name="B33" />
+      <Enum-Value Value="34" Name="B34" />
+      <Enum-Value Value="35" Name="B35" />
+      <Enum-Value Value="36" Name="B36" />
+      <Enum-Value Value="37" Name="B37" />
+      <Enum-Value Value="38" Name="B38" />
+      <Enum-Value Value="39" Name="B39" />
+      <Enum-Value Value="40" Name="B40" />
+      <Enum-Value Value="41" Name="B41" />
+      <Enum-Value Value="42" Name="B42" />
+      <Enum-Value Value="43" Name="B43" />
+      <Enum-Value Value="44" Name="B44" />
+      <Enum-Value Value="45" Name="B45" />
+      <Enum-Value Value="46" Name="B46" />
+      <Enum-Value Value="47" Name="B47" />
+      <Enum-Value Value="48" Name="B48" />
+      <Enum-Value Value="49" Name="B49" />
+      <Enum-Value Value="50" Name="B50" />
+      <Enum-Value Value="51" Name="B51" />
+      <Enum-Value Value="52" Name="B52" />
+      <Enum-Value Value="53" Name="B53" />
+      <Enum-Value Value="54" Name="B54" />
+      <Enum-Value Value="55" Name="B55" />
+      <Enum-Value Value="56" Name="B56" />
+      <Enum-Value Value="57" Name="B57" />
+      <Enum-Value Value="58" Name="B58" />
+      <Enum-Value Value="59" Name="B59" />
+      <Enum-Value Value="60" Name="B60" />
+      <Enum-Value Value="61" Name="B61" />
+      <Enum-Value Value="62" Name="B62" />
+      <Enum-Value Value="63" Name="B63" />
+      <Enum-Value Value="64" Name="B64" />
+      <Enum-Value Value="65" Name="B65" />
+      <Enum-Value Value="66" Name="B66" />
+      <Enum-Value Value="67" Name="B67" />
+      <Enum-Value Value="68" Name="B68" />
+      <Enum-Value Value="69" Name="B69" />
+      <Enum-Value Value="70" Name="B70" />
+      <Enum-Value Value="71" Name="B71" />
+      <Enum-Value Value="72" Name="B72" />
+      <Enum-Value Value="73" Name="B73" />
+      <Enum-Value Value="74" Name="B74" />
+      <Enum-Value Value="75" Name="B75" />
+      <Enum-Value Value="76" Name="B76" />
+      <Enum-Value Value="77" Name="B77" />
+      <Enum-Value Value="78" Name="B78" />
+      <Enum-Value Value="79" Name="B79" />
+      <Enum-Value Value="80" Name="B80" />
+      <Enum-Value Value="81" Name="B81" />
+      <Enum-Value Value="82" Name="B82" />
+      <Enum-Value Value="83" Name="B83" />
+      <Enum-Value Value="84" Name="B84" />
+      <Enum-Value Value="85" Name="B85" />
+      <Enum-Value Value="86" Name="B86" />
+      <Enum-Value Value="87" Name="B87" />
+      <Enum-Value Value="88" Name="B88" />
+      <Enum-Value Value="89" Name="B89" />
+      <Enum-Value Value="90" Name="B90" />
+      <Enum-Value Value="91" Name="B91" />
+      <Enum-Value Value="92" Name="B92" />
+      <Enum-Value Value="93" Name="B93" />
+      <Enum-Value Value="94" Name="B94" />
+      <Enum-Value Value="95" Name="B95" />
+      <Enum-Value Value="96" Name="B96" />
+    </Property>
+    <Property Name="_TrayDescription" Level="Service" Description="Description string for tray layout in rack view, for internal use only." Read-Only="true" Type="string" Max-Length="1000" />
+    <Property Name="DriverID" Level="Expert" Description="Unique Driver Identifier." Read-Only="true" Type="string" Max-Length="14" Value="MyCompany.Demo" />
+  </Device>
+  <Device Name="Detector_Name" Level="Normal" Description="Help text for device Detector_Id with name &quot;Detector_Name&quot;" Type="general">
+    <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Detector_Id" />
+    <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="Detector" />
+    <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+    <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+    <Property Name="Ready" Level="Normal" Description="Indicates that the module is ready for the next injection." Read-Only="true" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Property Name="IsAutoZeroRunning" Level="Normal" Description="" Read-Only="true" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Property>
+    <Property Name="ChannelsNumber" Level="Normal" Description="" Read-Only="true" Type="int" Min="-2147483648" Max="2147483648" Unit="" />
+    <Command Name="AutoZero" Level="Normal" Description="" />
+    <Property Name="DriverID" Level="Expert" Description="Unique Driver Identifier." Read-Only="true" Type="string" Max-Length="14" Value="MyCompany.Demo" />
+    <Device Name="Channel_1_Name" Level="Normal" Description="Detector channel" Type="ad-channel" NeedsIntegration="true">
+      <Command Name="AcqOn" Level="Normal" Description="Begin data acquisition." />
+      <Command Name="AcqOff" Level="Normal" Description="Terminate data acquisition." />
+      <Property Name="Delta" Level="Normal" Description="The signal's slope. Useful for triggers. &#xD;&#xA;(Difference between current value and value one second ago.)" Read-Only="true" Type="float" Digits="2" Min="-1000.00" Max="1000.00" Unit="mAU/s" />
+      <Property Name="Signal" Level="Normal" Description="The current signal value." Read-Only="true" Type="int" Min="0" Max="1000" Unit="mAU" />
+      <Property Name="SignalFactor" Level="Service" Read-Only="true" Type="float" Digits="16" Min="1.0000000000000000" Max="1.0000000000000000" Unit="" />
+      <Property Name="TimeStepFactor" Level="Service" Read-Only="true" Type="int" Min="1" Max="1" Unit="" />
+      <Property Name="TimeStepDivisor" Level="Service" Read-Only="true" Type="int" Min="1" Max="1" Unit="" />
+      <Property Name="Retention" Level="Normal" Description="The signal's retention time." Read-Only="true" Type="float" Digits="3" Min="0.000" Max="10000000.000" Unit="min" />
+      <Property Name="AcquisitionState" Level="Service" Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Started" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finishing" />
+      </Property>
+      <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Channel_1" />
+      <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="DetectorChannel" />
+      <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+      <Property Name="Rate" Level="Normal" Description="The data collection rate in Hz" Read-Only="true" Type="float" Digits="1" Min="0.1" Max="1000.0" Unit="Hz" />
+      <Property Name="Wavelength" Level="Normal" Description="The wavelength at which the channel measures the signal. &#xD;&#xA;See also: Bandwidth." Read-Only="false" Type="float" Digits="1" Min="200.0" Max="400.0" Unit="nm" />
+      <Property Name="AcquisitionTime_1_On" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="AcquisitionTime_2_Off" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="AcquisitionTime_3_Diff" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="Location" Level="Normal" Description="" Read-Only="true" Type="int" Min="1" Max="3" Unit="" Value="1">
+        <Enum-Value Value="1" Name="Left" />
+        <Enum-Value Value="2" Name="Middle" />
+        <Enum-Value Value="3" Name="Right" />
+      </Property>
+    </Device>
+    <Device Name="Channel_2_Name" Level="Normal" Description="Detector channel" Type="ad-channel" NeedsIntegration="false">
+      <Command Name="AcqOn" Level="Normal" Description="Begin data acquisition." />
+      <Command Name="AcqOff" Level="Normal" Description="Terminate data acquisition." />
+      <Property Name="Delta" Level="Normal" Description="The signal's slope. Useful for triggers. &#xD;&#xA;(Difference between current value and value one second ago.)" Read-Only="true" Type="float" Digits="2" Min="-1000.00" Max="1000.00" Unit="mV/s" />
+      <Property Name="Signal" Level="Normal" Description="The current signal value." Read-Only="true" Type="int" Min="0" Max="1000" Unit="mV" />
+      <Property Name="SignalFactor" Level="Service" Read-Only="true" Type="float" Digits="16" Min="1.0000000000000000" Max="1.0000000000000000" Unit="" />
+      <Property Name="TimeStepFactor" Level="Service" Read-Only="true" Type="int" Min="1" Max="1" Unit="" />
+      <Property Name="TimeStepDivisor" Level="Service" Read-Only="true" Type="int" Min="1" Max="1" Unit="" />
+      <Property Name="Retention" Level="Normal" Description="The signal's retention time." Read-Only="true" Type="float" Digits="3" Min="0.000" Max="10000000.000" Unit="min" />
+      <Property Name="AcquisitionState" Level="Service" Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Started" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finishing" />
+      </Property>
+      <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Channel_2" />
+      <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="DetectorChannel" />
+      <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+      <Property Name="Rate" Level="Normal" Description="The data collection rate in Hz" Read-Only="true" Type="float" Digits="1" Min="0.1" Max="1000.0" Unit="Hz" />
+      <Property Name="Wavelength" Level="Normal" Description="The wavelength at which the channel measures the signal. &#xD;&#xA;See also: Bandwidth." Read-Only="false" Type="float" Digits="1" Min="200.0" Max="400.0" Unit="nm" />
+      <Property Name="AcquisitionTime_1_On" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="AcquisitionTime_2_Off" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="AcquisitionTime_3_Diff" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="Location" Level="Normal" Description="" Read-Only="true" Type="int" Min="1" Max="3" Unit="" Value="2">
+        <Enum-Value Value="1" Name="Left" />
+        <Enum-Value Value="2" Name="Middle" />
+        <Enum-Value Value="3" Name="Right" />
+      </Property>
+    </Device>
+    <Device Name="Channel_3_Name" Level="Normal" Description="Detector channel" Type="ad-channel" NeedsIntegration="true">
+      <Command Name="AcqOn" Level="Normal" Description="Begin data acquisition." />
+      <Command Name="AcqOff" Level="Normal" Description="Terminate data acquisition." />
+      <Property Name="Delta" Level="Normal" Description="The signal's slope. Useful for triggers. &#xD;&#xA;(Difference between current value and value one second ago.)" Read-Only="true" Type="float" Digits="2" Min="-1000.00" Max="1000.00" Unit="mAU/s" />
+      <Property Name="Signal" Level="Normal" Description="The current signal value." Read-Only="true" Type="int" Min="0" Max="1000" Unit="mAU" />
+      <Property Name="SignalFactor" Level="Service" Read-Only="true" Type="float" Digits="16" Min="1.0000000000000000" Max="1.0000000000000000" Unit="" />
+      <Property Name="TimeStepFactor" Level="Service" Read-Only="true" Type="int" Min="1" Max="1" Unit="" />
+      <Property Name="TimeStepDivisor" Level="Service" Read-Only="true" Type="int" Min="1" Max="1" Unit="" />
+      <Property Name="Retention" Level="Normal" Description="The signal's retention time." Read-Only="true" Type="float" Digits="3" Min="0.000" Max="10000000.000" Unit="min" />
+      <Property Name="AcquisitionState" Level="Service" Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Started" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finishing" />
+      </Property>
+      <Property Name="ModelNo" Level="Expert" Description="Model number." Read-Only="true" Type="string" Max-Length="100" Value="Channel_3" />
+      <Property Name="DeviceType" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" Value="DetectorChannel" />
+      <Property Name="DeviceName" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="DeviceDescription" Level="Normal" Description="" Read-Only="false" Type="string" Max-Length="300" />
+      <Property Name="Rate" Level="Normal" Description="The data collection rate in Hz" Read-Only="true" Type="float" Digits="1" Min="0.1" Max="1000.0" Unit="Hz" />
+      <Property Name="Wavelength" Level="Normal" Description="The wavelength at which the channel measures the signal. &#xD;&#xA;See also: Bandwidth." Read-Only="false" Type="float" Digits="1" Min="200.0" Max="400.0" Unit="nm" />
+      <Property Name="AcquisitionTime_1_On" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="AcquisitionTime_2_Off" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="AcquisitionTime_3_Diff" Level="Normal" Description="" Read-Only="true" Type="string" Max-Length="300" />
+      <Property Name="Location" Level="Normal" Description="" Read-Only="true" Type="int" Min="1" Max="3" Unit="" Value="3">
+        <Enum-Value Value="1" Name="Left" />
+        <Enum-Value Value="2" Name="Middle" />
+        <Enum-Value Value="3" Name="Right" />
+      </Property>
+    </Device>
+  </Device>
+  <Device Name="System" Level="Normal" Description="The &quot;System&quot; device contains commands and properties for the entire instrument. &#xD;&#xA;It is always available and can't be seen in Chromeleon Instrument Configuration Manager." Type="general">
+    <Command Name="WriteReportMacro" Level="Service" Description="Writes a report macro definition to the audit trail.">
+      <Parameter Name="Name" Description="Name of the report macro. At dedicated places in report definition files, this name (preceded by a dollar character) will be replaced by the value text." Optional="false" ByName="false" Type="string" Max-Length="63" />
+      <Parameter Name="Value" Description="Value of the report macro. At dedicated places in report definition files, the macro name (preceded by a dollar character) will be replaced by this text." Optional="false" ByName="false" Type="string" Max-Length="255" />
+    </Command>
+    <Command Name="PlotMarker" Level="Service" Description="Adds a chromatogram or spectrum plot marker to the audit trail.">
+      <Parameter Name="MarkerString" Description="Description of the plot marker." Optional="true" ByName="false" Type="string" Max-Length="255" />
+    </Command>
+    <Command Name="RespondToMessage" Level="Expert" Description="If a Message command is currently executing, indicate that the user has clicked &quot;OK&quot;. (This command is automatically used by the system, and should not be used normally)">
+      <Parameter Name="MessageID" Description="If a Message command is currently executing, the internal id of the message." Optional="false" ByName="false" Type="int" Min="-2147483648" Max="2147483648" Unit="" />
+    </Command>
+    <Property Name="MessageID" Level="Expert" Description="If a Message command is currently executing, the internal id of the message." Read-Only="true" Type="int" Min="-2147483648" Max="2147483648" Unit="" />
+    <Property Name="MessageText" Level="Expert" Description="If a Message command is currently executing, the message text." Read-Only="true" Type="string" Max-Length="255" />
+    <Property Name="CurrentStage" Level="Expert" Description="The current instrument method stage." Read-Only="true" Type="string" Max-Length="127" />
+    <Property Name="TotalFluidics" Level="Service" Description="Represents the current fluidic setup of the instrument." Read-Only="true" Type="string" Max-Length="16384" />
+    <Property Name="Fluidics" Level="Service" Description="Represents the current fluidic setup of the instrument." Read-Only="false" Type="string" Max-Length="8192" />
+    <Property Name="DiagnosticsState" Level="Service" Description="State of diagnostics." Read-Only="true" Type="int" Min="0" Max="2" Unit="">
+      <Enum-Value Value="0" Name="Off" />
+      <Enum-Value Value="1" Name="On" />
+      <Enum-Value Value="2" Name="Aborted" />
+    </Property>
+    <Command Name="StartDiagnostics" Level="Service" Description="Start a diagnostic run.">
+      <Parameter Name="DeviceName" Description="Name of the device that is tested in the diagnostics run." Optional="true" ByName="false" Type="string" Max-Length="64" />
+      <Parameter Name="TestName" Description="Name of the diagnostics test." Optional="true" ByName="false" Type="string" Max-Length="64" />
+    </Command>
+    <Command Name="EndDiagnostics" Level="Service" Description="End a diagnostic run.">
+      <Parameter Name="Mode" Description="Normally finish or abort diagnostics." Optional="true" ByName="false" Type="bool">
+        <Enum-Value Value="0" Name="Off" />
+        <Enum-Value Value="1" Name="Abort" />
+      </Parameter>
+    </Command>
+    <Command Name="Sound" Level="Normal" Description="Plays a sound (on the instrument controller). &#xD;&#xA;Note: Not supported on Windows XP (64 bit), Windows Vista and Windows 7.">
+      <Parameter Name="File" Description="The name of the sound file (*.wav, usually found in the Windows directory). &#xD;&#xA;If no parameters are specified, all sounds stop. &#xD;&#xA;Note: Not supported on Windows XP (64 bit), Windows Vista and Windows 7." Optional="true" ByName="false" Type="string" Max-Length="260" />
+      <Parameter Name="Frequency" Description="The frequency of a sound to play. &#xD;&#xA;If no parameters are specified, all sounds stop. &#xD;&#xA;Note: Not supported on Windows XP (64 bit), Windows Vista and Windows 7." Optional="true" ByName="false" Type="int" Min="37" Max="20000" Unit="Hz" />
+      <Parameter Name="Duration" Description="The duration of a sound to play. &#xD;&#xA;If no parameters are specified, all sounds stop. &#xD;&#xA;Note: Not supported on Windows XP (64 bit), Windows Vista and Windows 7." Optional="true" ByName="false" Type="int" Min="0" Max="100" Unit="s" />
+    </Command>
+    <Command Name="DebugBreak" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." />
+    <Command Name="ConsumableChanged" Level="Normal" Description="Record a consumable change event.">
+      <Parameter Name="Comment" Description="Enter a comment for this event." Optional="true" ByName="false" Type="string" Max-Length="64" />
+    </Command>
+    <Command Name="EluentChanged" Level="Normal" Description="Record an eluent change event.">
+      <Parameter Name="Comment" Description="Enter a comment for this event." Optional="true" ByName="false" Type="string" Max-Length="64" />
+    </Command>
+    <Command Name="AbortInjection" Level="Normal" Description="Terminates data acquisition and aborts the current injection. &#xD;&#xA;The queue processing continues with the next injection." />
+    <Command Name="AbortQueue" Level="Normal" Description="Terminates data acquisition and aborts the current sequence queue run." />
+    <Command Name="StopFlow" Level="Normal" Description="Enter stop mode." />
+    <Command Name="Hold" Level="Normal" Description="Enter hold mode." />
+    <Command Name="Continue" Level="Normal" Description="End hold mode." />
+    <Command Name="AcqOff" Level="Normal" Description="End data acquisition on all channels." />
+    <Command Name="AcqOn" Level="Normal" Description="Turn acquisition on for all installed and initialized channels." />
+    <Command Name="StartManualAcquisition" Level="Service" Description="Starts baseline monitoring." />
+    <Property Name="HeapDump" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="false" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="UpdateTicks" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="LargestFreeBlock" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="CumulatedCount" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="CumulatedBytes" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="MaxCount" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="MaxBytes" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="FreeCount" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="FreeBytes" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="UsedCount" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="UsedBytes" Level="Service" Description="This property shows internal debugging information. &#xD;&#xA;Only available in the debug version." Read-Only="true" Type="int" Min="0" Max="10000000" Unit="" />
+    <Property Name="LicenseMode" Level="Expert" Description="Indicates the license mode." Read-Only="true" Type="int" Min="0" Max="5" Unit="">
+      <Enum-Value Value="0" Name="Unknown" />
+      <Enum-Value Value="1" Name="Standard" />
+      <Enum-Value Value="2" Name="NFP" />
+      <Enum-Value Value="3" Name="Demo" />
+      <Enum-Value Value="4" Name="DongleGracePeriod" />
+      <Enum-Value Value="5" Name="Interim" />
+    </Property>
+    <Property Name="LicenseServerNFPMode" Level="Expert" Description="&quot;On&quot; if the License Server could not be reached due to network problems. &#xD;&#xA;This Instrument Controller is using a locally cached license." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="On" />
+      <Enum-Value Value="0" Name="Off" />
+    </Property>
+    <Property Name="RequiredLicenseClass" Level="Service" Description="Indicates the required license class for this instrument." Read-Only="true" Type="float" Digits="1" Min="0.0" Max="3.0" Unit="">
+      <Enum-Value Value="0" Name="0" />
+      <Enum-Value Value="0.5" Name="ICControlSE" />
+      <Enum-Value Value="1" Name="1" />
+      <Enum-Value Value="2" Name="2" />
+      <Enum-Value Value="3" Name="3" />
+    </Property>
+    <Property Name="Class1Licenses" Level="Service" Description="This property shows internal information. Don't care about it." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="Class2Licenses" Level="Service" Description="This property shows internal information. Don't care about it." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="Class3Licenses" Level="Service" Description="This property shows internal information. Don't care about it." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="InstrumentControllerLicensed" Level="Service" Description="Indicates whether the license &quot;Instrument Controller&quot; is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="FractionCollectionLicensed" Level="Service" Description="Indicates whether the license &quot;Fraction Collection&quot; is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="3DDataAcquisitionLicensed" Level="Service" Description="Indicates whether the license &quot;3D Data Acquisition&quot; is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="ICControlSELicensed" Level="Service" Description="Indicates whether the license &quot;IC Control SE&quot; is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="ICS2x00GradientGenerationLicensed" Level="Service" Description="Indicates whether the license &quot;ICS-2x00 Gradient Generation&quot; is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="DDKDevelopmentLicensed" Level="Service" Description="Indicates whether the license &quot;DDK Development&quot; is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="SingleQuadTripleQuadGCMSLicensed" Level="Service" Description="Indicates whether the single quad and triple quad GC-MS license is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="LCMSLicensed" Level="Service" Description="Indicates whether the LC-MS license is enabled for the instrument controller." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="HomeDirectory" Level="Expert" Description="The home folder of the instrument. E.g. the instrument audit trails are stored in this folder." Read-Only="true" Type="string" Max-Length="2048" />
+    <Property Name="UserId" Level="Service" Description="The ID of the user who controls the instrument." Read-Only="true" Type="string" Max-Length="37" />
+    <Property Name="UserFullName" Level="Normal" Description="The full name of the user who controls the instrument." Read-Only="true" Type="string" Max-Length="256" />
+    <Property Name="UserName" Level="Normal" Description="The log on name of the user who controls the instrument." Read-Only="true" Type="string" Max-Length="33" />
+    <Property Name="Version" Level="Expert" Description="The Chromeleon version, including service pack." Read-Only="true" Type="string" Max-Length="64" />
+    <Property Name="ComputerName" Level="Normal" Description="The computer name of the Chromeleon Instrument Controller." Read-Only="true" Type="string" Max-Length="16" />
+    <Property Name="TimeZoneName" Level="Advanced" Description="The current time zone." Read-Only="true" Type="string" Max-Length="64" />
+    <Property Name="TimeZoneOffset" Level="Expert" Description="The offset of local time to universal coordinated time (UTC), according to current time zone. This does not include daylight savings time. I.e.: Local time = UTC + &lt;time zone offset&gt; + &lt;daylight offset&gt;" Read-Only="true" Type="int" Min="-1440" Max="1440" Unit="min" />
+    <Property Name="DaylightOffset" Level="Expert" Description="The current daylight savings time offset to UTC. I.e.: Local time = UTC + &lt;time zone offset&gt; + &lt;daylight offset&gt;" Read-Only="true" Type="int" Min="-1440" Max="1440" Unit="min" />
+    <Property Name="SystemDriveFreeSpace" Level="Service" Description="The amount of free space in GB available on the operating system drive." Read-Only="true" Type="float" Digits="3" Min="0.000" Unit="" />
+    <Property Name="SerialNo" Level="Normal" Description="The dongle serial number. &#xD;&#xA;Together with the license file, this determines which options are available." Read-Only="true" Type="int" Min="0" Max="65335" Unit="" />
+    <Property Name="OQMode" Level="Service" Description="The OQ mode." Read-Only="true" Type="int" Min="0" Max="127" Unit="" />
+    <Property Name="CMOQVersion" Level="Service" Description="This property shows internal information. Don't care about it." Read-Only="true" Type="int" Min="0" Max="127" Unit="" />
+    <Property Name="LineNo" Level="Normal" Description="The line number for the next command in the current instrument method." Read-Only="true" Type="int" Min="0" Max="100000" Unit="" />
+    <Property Name="LineId" Level="Service" Description="The line ID of the next command in the current instrument method." Read-Only="true" Type="string" Max-Length="12" />
+    <Property Name="InstrumentName" Level="Normal" Description="The name of the instrument as specified in Chromeleon Instrument Configuration Manager." Read-Only="true" Type="string" Max-Length="24" />
+    <Property Name="InstrumentMethodEnd" Level="Normal" Description="The retention time of the last command of the current instrument method." Read-Only="true" Type="float" Digits="3" Min="-100000.000" Max="100000.000" Unit="min" />
+    <Property Name="InstrumentMethodStart" Level="Normal" Description="The retention time of the first command of the current instrument method." Read-Only="true" Type="float" Digits="3" Min="-100000.000" Max="100000.000" Unit="min" />
+    <Property Name="InstrumentMethodVersion" Level="Expert" Description="The version number of the current instrument method." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+    <Property Name="Retention" Level="Normal" Description="The retention time of the instrument." Read-Only="true" Type="float" Digits="3" Min="-100000.000" Max="100000.000" Unit="min" />
+    <Property Name="InjectWait" Level="Normal" Description="Indicates whether the instrument is waiting for the inject response." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="On" />
+      <Enum-Value Value="0" Name="Off" />
+    </Property>
+    <Property Name="StopMode" Level="Normal" Description="Stop mode is like hold mode, but the flow is stopped." Read-Only="false" Type="bool">
+      <Enum-Value Value="1" Name="On" />
+      <Enum-Value Value="0" Name="Off" />
+    </Property>
+    <Property Name="HoldMode" Level="Normal" Description="Indicates whether the instrument is waiting, e.g. for an event or a CONTINUE command. &#xD;&#xA;In hold mode, the progress of retention time and gradients is suspended, but the flow continues." Read-Only="false" Type="bool">
+      <Enum-Value Value="1" Name="On" />
+      <Enum-Value Value="0" Name="Off" />
+    </Property>
+    <Property Name="StopQueue" Level="Expert" Description="The most urgent stop sequence queue request." Read-Only="false" Type="int" Min="0" Max="3" Unit="">
+      <Enum-Value Value="0" Name="No" />
+      <Enum-Value Value="1" Name="AfterCurrentSequence" />
+      <Enum-Value Value="2" Name="AfterCurrentMethod" />
+      <Enum-Value Value="3" Name="Immediately" />
+    </Property>
+    <Property Name="MethodKind" Level="Advanced" Description="The kind of the (main) running, starting or stopping method." Read-Only="true" Type="int" Min="0" Max="8" Unit="">
+      <Enum-Value Value="0" Name="None" />
+      <Enum-Value Value="1" Name="Unknown" />
+      <Enum-Value Value="2" Name="Manual" />
+      <Enum-Value Value="3" Name="Injection" />
+      <Enum-Value Value="4" Name="WakeUp" />
+      <Enum-Value Value="5" Name="Startup" />
+      <Enum-Value Value="6" Name="Shutdown" />
+      <Enum-Value Value="7" Name="Standby" />
+      <Enum-Value Value="8" Name="Emergency" />
+    </Property>
+    <Property Name="MethodIsRunning" Level="Advanced" Description="Indicates whether an instrument method or a script is running." Read-Only="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Property>
+    <Property Name="Acquisition" Level="Normal" Description="Indicates whether data acquisition is running. ACQUISITION ON/OFF turns all installed channels on or off." Read-Only="false" Type="bool">
+      <Enum-Value Value="1" Name="On" />
+      <Enum-Value Value="0" Name="Off" />
+    </Property>
+    <Property Name="AcquisitionControllerStatus" Level="Service" Description="The status of the current acquisition controller." Read-Only="true" Type="int" Min="0" Max="3" Unit="">
+      <Enum-Value Value="0" Name="Idle" />
+      <Enum-Value Value="1" Name="MonitoringBaseline" />
+      <Enum-Value Value="2" Name="RunningQueue" />
+      <Enum-Value Value="3" Name="RunningManualSmartX" />
+    </Property>
+    <Property Name="PreparingInjectionID" Level="Expert" Description="The preparing injection ID, if available." Read-Only="true" Type="string" Max-Length="2048" />
+    <Property Name="Analyzer" Level="Expert" Description="Indicates whether the analyzer controlling the instrument is ready for the next sample to run." Read-Only="false" Type="bool">
+      <Enum-Value Value="0" Name="NotReady" />
+      <Enum-Value Value="1" Name="Ready" />
+    </Property>
+    <Property Name="InstrumentControllerPrivateBytes" Level="Service" Description="The number of allocated MB of the Instrument Controller process that cannot be shared with other processes." Read-Only="true" Type="float" Digits="3" Min="0.000" Unit="" />
+    <Property Name="InstrumentControllerVirtualSize" Level="Service" Description="The virtual address space size of the Instrument Controller process in MB." Read-Only="true" Type="float" Digits="3" Min="0.000" Unit="" />
+    <Property Name="ServerStartTime" Level="Expert" Description="Time when the instrument controller service was started." Read-Only="true" Type="string" Max-Length="26" />
+    <Property Name="QueueStartTime" Level="Expert" Description="Time when the queue was started." Read-Only="true" Type="string" Max-Length="26" />
+    <Device Name="Sequence" Level="Normal" Description="The currently running sequence." Type="general">
+      <Property Name="RemainingInjectionCount" Level="Normal" Description="The number of remaining idle, preparing or running injections that will be processed during this run." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+      <Property Name="InjectionCount" Level="Normal" Description="The total number of injections that are contained in the sequence." Read-Only="true" Type="int" Min="0" Max="2147483648" Unit="" />
+      <Property Name="RawDataDriveFreeSpace" Level="Expert" Description="The amount of free space in GB available on the drive where the raw data of the running sequence are stored." Read-Only="true" Type="float" Digits="3" Min="0.000" Unit="" />
+      <Device Name="CustomVariables" Level="Normal" Description="Custom Variables" Type="general" DynamicContent="true" />
+    </Device>
+    <Device Name="PrevStandard" Level="Normal" Description="The last processed standard injection. &#xD;&#xA;Note: this is not necessarily a standard for the current injection!" Type="general">
+      <Property Name="InjectTime" Level="Expert" Description="Injection time." Read-Only="true" Type="string" Max-Length="26" />
+      <Property Name="NumberOfReinjections" Level="Advanced" Description="The number of times the original injection has been re-injected." Read-Only="true" Type="int" Min="0" Max="999999" Unit="" />
+      <Property Name="AutoDilutionRatio" Level="Advanced" Description="The ratio calculated by IRC for the automatic dilution of an injection." Read-Only="true" Type="float" Digits="4" Min="0.0000" Max="1.0000" Unit="" />
+      <Property Name="_Volume" Level="Advanced" Description="The injection volume." Read-Only="true" Type="float" Digits="1" Min="0.0" Max="100000.0" Unit="" />
+      <Property Name="_Position" Level="Advanced" Description="The sample's position on the sample tray." Read-Only="true" Type="string" Max-Length="25" />
+      <Property Name="SpikeGroup" Level="Normal" Description="Spike group from the sequence table." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Level" Level="Advanced" Description="Calibration level from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="ReplicateID" Level="Advanced" Description="Replicate ID from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="IStdAmount" Level="Advanced" Description="ISTD amount from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="DilutionFactor" Level="Advanced" Description="Dilution factor from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Weight" Level="Advanced" Description="Injection weight from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Status" Level="Advanced" Description="Injection status from the sequence table." Read-Only="true" Type="int" Min="0" Max="4" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Preparing" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finished" />
+        <Enum-Value Value="4" Name="Interrupted" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="ProcessingMethod" Level="Advanced" Description="The name of the processing method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="InstrumentMethod" Level="Normal" Description="The name of the injection instrument method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Sequence" Level="Normal" Description="The sequence name (without path)." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Type" Level="Normal" Description="The injection type (standard, unknown...)." Read-Only="true" Type="int" Min="0" Max="8" Unit="">
+        <Enum-Value Value="0" Name="Unknown" />
+        <Enum-Value Value="1" Name="BlankRun" />
+        <Enum-Value Value="2" Name="CheckStandard" />
+        <Enum-Value Value="4" Name="CalibrationStandard" />
+        <Enum-Value Value="5" Name="Bracket" />
+        <Enum-Value Value="6" Name="Matrix" />
+        <Enum-Value Value="7" Name="Spiked" />
+        <Enum-Value Value="8" Name="Unspiked" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="Number" Level="Normal" Description="The injection number." Read-Only="true" Type="int" Min="0" Max="9999" Unit="" />
+      <Property Name="GUID" Level="Advanced" Description="The globally unique ID of the injection run." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="ID" Level="Expert" Description="The internal injection identification (unique in the sequence, never changing)." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="Comment" Level="Normal" Description="The injection comment." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="Name" Level="Normal" Description="The injection name." Read-Only="true" RDefault="true" Type="string" Max-Length="129" />
+      <Property Name="URL" Level="Expert" Description="The full internal designation of the injection." Read-Only="true" Type="string" Max-Length="2048" />
+      <Property Name="LocalURL" Level="Service" Description="The full local path of the injection. This is the URL in the XVault if the injection is downloaded." Read-Only="true" Type="string" Max-Length="2048" />
+      <Device Name="CustomVariables" Level="Normal" Description="Custom Variables" Type="general" DynamicContent="true" />
+    </Device>
+    <Device Name="PrevInjection" Level="Normal" Description="The injection processed last." Type="general">
+      <Property Name="InjectTime" Level="Expert" Description="Injection time." Read-Only="true" Type="string" Max-Length="26" />
+      <Property Name="NumberOfReinjections" Level="Advanced" Description="The number of times the original injection has been re-injected." Read-Only="true" Type="int" Min="0" Max="999999" Unit="" />
+      <Property Name="AutoDilutionRatio" Level="Advanced" Description="The ratio calculated by IRC for the automatic dilution of an injection." Read-Only="true" Type="float" Digits="4" Min="0.0000" Max="1.0000" Unit="" />
+      <Property Name="_Volume" Level="Advanced" Description="The injection volume." Read-Only="true" Type="float" Digits="1" Min="0.0" Max="100000.0" Unit="" />
+      <Property Name="_Position" Level="Advanced" Description="The sample's position on the sample tray." Read-Only="true" Type="string" Max-Length="25" />
+      <Property Name="SpikeGroup" Level="Normal" Description="Spike group from the sequence table." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Level" Level="Advanced" Description="Calibration level from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="ReplicateID" Level="Advanced" Description="Replicate ID from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="IStdAmount" Level="Advanced" Description="ISTD amount from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="DilutionFactor" Level="Advanced" Description="Dilution factor from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Weight" Level="Advanced" Description="Injection weight from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Status" Level="Advanced" Description="Injection status from the sequence table." Read-Only="true" Type="int" Min="0" Max="4" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Preparing" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finished" />
+        <Enum-Value Value="4" Name="Interrupted" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="ProcessingMethod" Level="Advanced" Description="The name of the processing method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="InstrumentMethod" Level="Normal" Description="The name of the injection instrument method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Sequence" Level="Normal" Description="The sequence name (without path)." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Type" Level="Normal" Description="The injection type (standard, unknown...)." Read-Only="true" Type="int" Min="0" Max="8" Unit="">
+        <Enum-Value Value="0" Name="Unknown" />
+        <Enum-Value Value="1" Name="BlankRun" />
+        <Enum-Value Value="2" Name="CheckStandard" />
+        <Enum-Value Value="4" Name="CalibrationStandard" />
+        <Enum-Value Value="5" Name="Bracket" />
+        <Enum-Value Value="6" Name="Matrix" />
+        <Enum-Value Value="7" Name="Spiked" />
+        <Enum-Value Value="8" Name="Unspiked" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="Number" Level="Normal" Description="The injection number." Read-Only="true" Type="int" Min="0" Max="9999" Unit="" />
+      <Property Name="GUID" Level="Advanced" Description="The globally unique ID of the injection run." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="ID" Level="Expert" Description="The internal injection identification (unique in the sequence, never changing)." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="Comment" Level="Normal" Description="The injection comment." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="Name" Level="Normal" Description="The injection name." Read-Only="true" RDefault="true" Type="string" Max-Length="129" />
+      <Property Name="URL" Level="Expert" Description="The full internal designation of the injection." Read-Only="true" Type="string" Max-Length="2048" />
+      <Property Name="LocalURL" Level="Service" Description="The full local path of the injection. This is the URL in the XVault if the injection is downloaded." Read-Only="true" Type="string" Max-Length="2048" />
+      <Device Name="CustomVariables" Level="Normal" Description="Custom Variables" Type="general" DynamicContent="true" />
+    </Device>
+    <Device Name="Injection" Level="Normal" Description="The currently running injection." Type="general">
+      <Property Name="InjectTime" Level="Expert" Description="Injection time." Read-Only="true" Type="string" Max-Length="26" />
+      <Property Name="NumberOfReinjections" Level="Advanced" Description="The number of times the original injection has been re-injected." Read-Only="true" Type="int" Min="0" Max="999999" Unit="" />
+      <Property Name="AutoDilutionRatio" Level="Advanced" Description="The ratio calculated by IRC for the automatic dilution of an injection." Read-Only="true" Type="float" Digits="4" Min="0.0000" Max="1.0000" Unit="" />
+      <Property Name="_Volume" Level="Advanced" Description="The injection volume." Read-Only="true" Type="float" Digits="1" Min="0.0" Max="100000.0" Unit="" />
+      <Property Name="_Position" Level="Advanced" Description="The sample's position on the sample tray." Read-Only="true" Type="string" Max-Length="25" />
+      <Property Name="SpikeGroup" Level="Normal" Description="Spike group from the sequence table." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Level" Level="Advanced" Description="Calibration level from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="ReplicateID" Level="Advanced" Description="Replicate ID from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="IStdAmount" Level="Advanced" Description="ISTD amount from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="DilutionFactor" Level="Advanced" Description="Dilution factor from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Weight" Level="Advanced" Description="Injection weight from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Status" Level="Advanced" Description="Injection status from the sequence table." Read-Only="true" Type="int" Min="0" Max="4" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Preparing" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finished" />
+        <Enum-Value Value="4" Name="Interrupted" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="ProcessingMethod" Level="Advanced" Description="The name of the processing method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="InstrumentMethod" Level="Normal" Description="The name of the injection instrument method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Sequence" Level="Normal" Description="The sequence name (without path)." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Type" Level="Normal" Description="The injection type (standard, unknown...)." Read-Only="true" Type="int" Min="0" Max="8" Unit="">
+        <Enum-Value Value="0" Name="Unknown" />
+        <Enum-Value Value="1" Name="BlankRun" />
+        <Enum-Value Value="2" Name="CheckStandard" />
+        <Enum-Value Value="4" Name="CalibrationStandard" />
+        <Enum-Value Value="5" Name="Bracket" />
+        <Enum-Value Value="6" Name="Matrix" />
+        <Enum-Value Value="7" Name="Spiked" />
+        <Enum-Value Value="8" Name="Unspiked" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="Number" Level="Normal" Description="The injection number." Read-Only="true" Type="int" Min="0" Max="9999" Unit="" />
+      <Property Name="GUID" Level="Advanced" Description="The globally unique ID of the injection run." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="ID" Level="Expert" Description="The internal injection identification (unique in the sequence, never changing)." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="Comment" Level="Normal" Description="The injection comment." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="Name" Level="Normal" Description="The injection name." Read-Only="true" RDefault="true" Type="string" Max-Length="129" />
+      <Property Name="URL" Level="Expert" Description="The full internal designation of the injection." Read-Only="true" Type="string" Max-Length="2048" />
+      <Property Name="LocalURL" Level="Service" Description="The full local path of the injection. This is the URL in the XVault if the injection is downloaded." Read-Only="true" Type="string" Max-Length="2048" />
+      <Device Name="CustomVariables" Level="Normal" Description="Custom Variables" Type="general" DynamicContent="true" />
+    </Device>
+    <Device Name="NextInjection" Level="Normal" Description="The next injection to run, if available." Type="general">
+      <Property Name="InjectTime" Level="Expert" Description="Injection time." Read-Only="true" Type="string" Max-Length="26" />
+      <Property Name="NumberOfReinjections" Level="Advanced" Description="The number of times the original injection has been re-injected." Read-Only="true" Type="int" Min="0" Max="999999" Unit="" />
+      <Property Name="AutoDilutionRatio" Level="Advanced" Description="The ratio calculated by IRC for the automatic dilution of an injection." Read-Only="true" Type="float" Digits="4" Min="0.0000" Max="1.0000" Unit="" />
+      <Property Name="_Volume" Level="Advanced" Description="The injection volume." Read-Only="true" Type="float" Digits="1" Min="0.0" Max="100000.0" Unit="" />
+      <Property Name="_Position" Level="Advanced" Description="The sample's position on the sample tray." Read-Only="true" Type="string" Max-Length="25" />
+      <Property Name="SpikeGroup" Level="Normal" Description="Spike group from the sequence table." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Level" Level="Advanced" Description="Calibration level from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="ReplicateID" Level="Advanced" Description="Replicate ID from the sequence table." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="IStdAmount" Level="Advanced" Description="ISTD amount from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="DilutionFactor" Level="Advanced" Description="Dilution factor from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Weight" Level="Advanced" Description="Injection weight from the sequence table." Read-Only="true" Type="float" Digits="4" Min="0.0001" Max="1000000.0000" Unit="" />
+      <Property Name="Status" Level="Advanced" Description="Injection status from the sequence table." Read-Only="true" Type="int" Min="0" Max="4" Unit="">
+        <Enum-Value Value="0" Name="Idle" />
+        <Enum-Value Value="1" Name="Preparing" />
+        <Enum-Value Value="2" Name="Running" />
+        <Enum-Value Value="3" Name="Finished" />
+        <Enum-Value Value="4" Name="Interrupted" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="ProcessingMethod" Level="Advanced" Description="The name of the processing method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="InstrumentMethod" Level="Normal" Description="The name of the injection instrument method." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Sequence" Level="Normal" Description="The sequence name (without path)." Read-Only="true" Type="string" Max-Length="129" />
+      <Property Name="Type" Level="Normal" Description="The injection type (standard, unknown...)." Read-Only="true" Type="int" Min="0" Max="8" Unit="">
+        <Enum-Value Value="0" Name="Unknown" />
+        <Enum-Value Value="1" Name="BlankRun" />
+        <Enum-Value Value="2" Name="CheckStandard" />
+        <Enum-Value Value="4" Name="CalibrationStandard" />
+        <Enum-Value Value="5" Name="Bracket" />
+        <Enum-Value Value="6" Name="Matrix" />
+        <Enum-Value Value="7" Name="Spiked" />
+        <Enum-Value Value="8" Name="Unspiked" />
+        <Enum-Value Value="9" Name="n/a" />
+      </Property>
+      <Property Name="Number" Level="Normal" Description="The injection number." Read-Only="true" Type="int" Min="0" Max="9999" Unit="" />
+      <Property Name="GUID" Level="Advanced" Description="The globally unique ID of the injection run." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="ID" Level="Expert" Description="The internal injection identification (unique in the sequence, never changing)." Read-Only="true" Type="string" Max-Length="37" />
+      <Property Name="Comment" Level="Normal" Description="The injection comment." Read-Only="true" Type="string" Max-Length="256" />
+      <Property Name="Name" Level="Normal" Description="The injection name." Read-Only="true" RDefault="true" Type="string" Max-Length="129" />
+      <Property Name="URL" Level="Expert" Description="The full internal designation of the injection." Read-Only="true" Type="string" Max-Length="2048" />
+      <Property Name="LocalURL" Level="Service" Description="The full local path of the injection. This is the URL in the XVault if the injection is downloaded." Read-Only="true" Type="string" Max-Length="2048" />
+      <Device Name="CustomVariables" Level="Normal" Description="Custom Variables" Type="general" DynamicContent="true" />
+    </Device>
+  </Device>
+  <Command Name="Log" Level="Normal" Description="Writes any device property to the audit trail. Use this to document measured conditions, for example temperature, without using an A/D channel.">
+    <Parameter Name="Property" Description="The name of the property which you want to write to the audit trail." Optional="false" ByName="false" Type="reference" />
+  </Command>
+  <Command Name="Message" Level="Normal" Description="Shows a message to the operator, and waits until the operator clicks OK. Stops the instrument method time, the pump is in 'Hold' mode. But the acquisition is not stopped.">
+    <Parameter Name="Text" Description="To message which you want to display, e.g. &quot;Make sure all vials are in their correct position&quot;. It will be written to the audit trail, too." Optional="false" ByName="false" Type="string" Max-Length="250" />
+  </Command>
+  <Command Name="Protocol" Level="Normal" Description="Write an arbitrary message to the audit trail, e.g. experimental conditions you want to document.">
+    <Parameter Name="Text" Description="The message which you want to write to the audit trail." Optional="false" ByName="false" Type="string" Max-Length="250" />
+  </Command>
+  <Command Name="Wait" Level="Normal" Description="Interrupt the instrument method until the condition changes from &quot;false&quot; to &quot;true&quot;. 'Wait' stops the instrument method time, the pump is in 'Hold' mode. But the acquisition is not stopped.">
+    <Parameter Name="Condition" Description="The condition, when to resume instrument method execution. You can specify an input name or use expressions like (Input_1 AND NOT Input_2) OR (Pressure &gt; 40)." Optional="false" ByName="false" Type="bool">
+      <Enum-Value Value="0" Name="False" />
+      <Enum-Value Value="1" Name="True" />
+    </Parameter>
+    <Parameter Name="Run" Description="Whether retention time and gradients should be on hold or continue during the Wait command. (Default: Hold)" Optional="true" ByName="false" Type="bool">
+      <Enum-Value Value="0" Name="Continue" />
+      <Enum-Value Value="1" Name="Hold" />
+    </Parameter>
+    <Parameter Name="Timeout" Description="The maximum time to wait for the condition to become true. If this time is exceeded, the injection will abort. (Default: Infinite)" Optional="true" ByName="true" Type="float" Digits="2" Min="0.10" Max="1440.00" Unit="min">
+      <Enum-Value Value="0" Name="Infinite" />
+    </Parameter>
+  </Command>
+  <Command Name="Delay" Level="Advanced" Description="Delays the execution of the following commands for the given time. Normally used only in triggers.">
+    <Parameter Name="Delay" Description="Delays the execution of the following commands for the given time. Normally used only in triggers." Optional="false" ByName="false" Type="float" Digits="1" Min="0.0" Max="1000000.0" Unit="s" />
+  </Command>
+  <Command Name="VirtualChannel" Level="Expert" Description="Create a virtual channel and start the acquisition.">
+    <Parameter Name="Name" Description="The name of the virtual channel. It must be unique and different to any signal name." Optional="false" ByName="false" Type="string" Max-Length="127" />
+    <Parameter Name="Formula" Description="The numeric expression that should be recorded. You can use formulas like (UV_VIS_1 / 1000) / (ColumnOven.Temperature * 10)." Optional="false" ByName="false" Type="float" Digits="6" Min="-100000002004088000000.000000" Max="100000002004088000000.000000" Unit="" />
+    <Parameter Name="Type" Description="The type of the virtual channel: &#xD;&#xA;- Use Analog (the default) to record a continuous curve like a detector signal or a temperature. &#xD;&#xA;- Use Digital if the numeric expression can result only in a few discrete values (e.g. in case of a relay state). The curve will consist of steps." Optional="true" ByName="true" Type="bool">
+      <Enum-Value Value="0" Name="Analog" />
+      <Enum-Value Value="1" Name="Digital" />
+    </Parameter>
+    <Parameter Name="Unit" Description="The unit of the virtual channel." Optional="true" ByName="true" Type="string" Max-Length="255" />
+    <Parameter Name="Evaluate" Description="Indicates whether the signal is evaluated (peak detection and integration). The default is 'No'." Optional="true" ByName="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Parameter>
+  </Command>
+  <Command Name="OnlineExtract" Level="Expert" Description="Create an online extract and start the acquisition.">
+    <Parameter Name="Name" Description="The name of the online extract. It must be unique and different to any signal name." Optional="false" ByName="false" Type="string" Max-Length="127" />
+    <Parameter Name="TraceType" Description="The trace type that should be used for this online extract." Optional="false" ByName="false" Type="int" Min="1" Max="4" Unit="">
+      <Enum-Value Value="1" Name="MassRange" />
+      <Enum-Value Value="2" Name="TIC" />
+      <Enum-Value Value="3" Name="BasePeak" />
+      <Enum-Value Value="4" Name="Fragment" />
+    </Parameter>
+    <Parameter Name="ScanFilter" Description="The scan filter that should be used for this online extract." Optional="false" ByName="false" Type="string" Max-Length="255" />
+    <Parameter Name="SmoothingType" Description="The smoothing type that should be used for this online extract." Optional="false" ByName="false" Type="int" Min="0" Max="4" Unit="">
+      <Enum-Value Value="0" Name="None" />
+      <Enum-Value Value="1" Name="MovingAverage" />
+      <Enum-Value Value="2" Name="Olympic" />
+      <Enum-Value Value="3" Name="Gaussian" />
+      <Enum-Value Value="4" Name="SavitzkyGolay" />
+    </Parameter>
+    <Parameter Name="SmoothingRange" Description="The smoothing range that should be used for this online extract. &#xD;&#xA;Must be odd." Optional="true" ByName="true" Type="int" Min="3" Max="999" Unit="" />
+    <Parameter Name="Unit" Description="The unit of the online extract." Optional="true" ByName="true" Type="string" Max-Length="255" />
+    <Parameter Name="Evaluate" Description="Indicates whether the signal is evaluated (peak detection and integration). The default is 'No'." Optional="true" ByName="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Parameter>
+    <Parameter Name="Persist" Description="Indicates whether the signal should be persisted to a data vault. The default is 'No'." Optional="true" ByName="true" Type="bool">
+      <Enum-Value Value="1" Name="Yes" />
+      <Enum-Value Value="0" Name="No" />
+    </Parameter>
+    <Parameter Name="MinMass" Description="If the ScanFilter contains [MASSRANGE], this part of the filter expression will be replaced by [MinMass-MaxMass]" Optional="true" ByName="true" Type="int" Min="0" Max="9999" Unit="" />
+    <Parameter Name="MaxMass" Description="If the ScanFilter contains [MASSRANGE], this part of the filter expression will be replaced by [MinMass-MaxMass]" Optional="true" ByName="true" Type="int" Min="0" Max="9999" Unit="" />
+  </Command>
+  <Command Name="End" Level="Normal" Description="Marks the end of an instrument method." />
+</Symbols>

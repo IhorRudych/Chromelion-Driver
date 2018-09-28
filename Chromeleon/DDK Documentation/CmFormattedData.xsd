@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CmFormattedDataSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="RequiredStringElement">
+    <xs:attribute name="value">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="ValueElement">
+    <xs:attribute name="value" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="FormattedObject">
+    <xs:sequence>
+      <xs:element name="DisplayName" type="RequiredStringElement" />
+      <xs:element name="Description" type="ValueElement" minOccurs="0"/>
+      <xs:element name="ShortName" type="ValueElement" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Property" type="FormattedProperty"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Object" type="FormattedObject"/>
+        </xs:choice>
+    </xs:sequence>
+    <xs:attribute name = "type" type="xs:string" use="required"/>
+    <xs:attribute name = "id" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="FormattedProperty">
+    <xs:sequence>
+      <xs:element name="DisplayName" type="RequiredStringElement"/>
+      <xs:element name="Description" type="ValueElement" minOccurs="0"/>
+      <xs:element name="ShortName" type="ValueElement" minOccurs="0"/>
+      <xs:element name="Value" type="ValueElement"/>
+    </xs:sequence>
+    <xs:attribute name = "id" type="xs:string" use="optional"/>
+    <xs:attribute name = "name" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="CmFormattedData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Property" type="FormattedProperty"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Object" type="FormattedObject"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

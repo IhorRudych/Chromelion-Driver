@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1AE74C3D-CCC0-49C0-9E3F-CFDF39EBC69B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dionex.DDK.V2.TimeTableDriver.EditorPlugIn</RootNamespace>
+    <AssemblyName>Dionex.DDK.V2.TimeTableDriver.EditorPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dionex.DDK.V2.Driver, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.Components.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.Symbols, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.Symbols.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TimeGridPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeGridPage.Designer.cs">
+      <DependentUpon>TimeGridPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlugIn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TimeGridPage.resx">
+      <DependentUpon>TimeGridPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>md  "C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\TimeTableDriver"
+
+copy $(TargetName).dll "C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\TimeTableDriver\"
+copy $(TargetName).pdb "C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\TimeTableDriver\"
+
+"C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -driverfolder="C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\TimeTableDriver " -timebaseclass=1 -verbose=true</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Driver>
+    <Device name="Preflight Device 1">
+      <Parameter description="Just a name for the device" name="Device Name">PreflightDevice1</Parameter>
+    </Device>
+    <Device name="Preflight Device 2">
+      <Parameter description="Just a name for the device" name="Device Name">PreflightDevice2</Parameter>
+    </Device>
+    <Device name="Preflight Device 3">
+      <Parameter description="Just a name for the device" name="Device Name">PreflightDevice3</Parameter>
+    </Device>
+    <Device name="Preflight Device 4">
+      <Parameter description="Just a name for the device" name="Device Name">PreflightDevice4</Parameter>
+    </Device>
+  </Driver>
+</Configuration>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<Driver>
+		<Communication name="Communication">
+			<Parameter name="Port">COM1</Parameter>
+		</Communication>
+		<Device name="Interface">
+			<Parameter name="Device Name">Interface</Parameter>
+		</Device>
+		<Device name="Relay 1">
+			<Parameter name="Device Name">Relay_1</Parameter>
+		</Device>
+		<Device name="Relay 2">
+			<Parameter name="Device Name">Relay_2</Parameter>
+		</Device>
+		<Device name="Relay 3">
+			<Parameter name="Device Name">Relay_3</Parameter>
+		</Device>
+		<Device name="Relay 4">
+			<Parameter name="Device Name">Relay_4</Parameter>
+		</Device>
+		<Device name="Relay 5">
+			<Parameter name="Device Name">Relay_5</Parameter>
+		</Device>
+		<Device name="Relay 6">
+			<Parameter name="Device Name">Relay_6</Parameter>
+		</Device>
+		<Device name="Channel A">
+			<Parameter name="Device Name">Channel_A</Parameter>
+		</Device>
+		<Device name="Channel B">
+			<Parameter name="Device Name">Channel_B</Parameter>
+		</Device>
+	</Driver>
+</Configuration>

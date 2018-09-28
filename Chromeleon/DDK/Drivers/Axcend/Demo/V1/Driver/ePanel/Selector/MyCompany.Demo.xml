@@ -1,0 +1,36 @@
+﻿<!-- This the result after applying the ePanel selector MyCompany.Demo.xsl to the driver SymbolTable.xml (VS / Debug / Start XSLT Debugging) -->
+
+<HomePanels>
+  <Panel Name="MyCompany.Demo" Priority="10" Block="Right">
+    <Macro Name="Demo" DeviceName="Demo_Name" />
+  </Panel>
+
+  <Panel Name="MyCompany.Demo.Heater" Priority="20" Block="Right">
+    <Macro Name="Demo" DeviceName="Demo_Name" />
+    <Macro Name="Heater" DeviceName="Heater_Name" />
+  </Panel>
+</HomePanels>
+
+<DevicePanels>
+  <Panel Name="MyCompany.Demo" Priority="100">
+    <Macro Name="Demo" DeviceName="Demo_Name" />
+  </Panel>
+
+  <Panel Name="MyCompany.Demo.Heater" Priority="200">
+    <Macro Name="Demo" DeviceName="Demo_Name" />
+    <Macro Name="Heater" DeviceName="Heater_Name" />
+  </Panel>
+
+  <Panel Name="MyCompany.Demo.Pump" Priority="300">
+    <Macro Name="Demo" DeviceName="Demo_Name" />
+    <Macro Name="Pump" DeviceName="Pump_Name" />
+  </Panel>
+
+  <Panel Name="MyCompany.Demo.Detector" Priority="400">
+    <Macro Name="Demo" DeviceName="Demo_Name" />
+    <Macro Name="Detector" DeviceName="Detector_Name" />
+    <Macro Name="Detector_Channel_1" DeviceName="Channel_1_Name" />
+    <Macro Name="Detector_Channel_2" DeviceName="Channel_2_Name" />
+    <Macro Name="Detector_Channel_3" DeviceName="Channel_3_Name" />
+  </Panel>
+</DevicePanels>

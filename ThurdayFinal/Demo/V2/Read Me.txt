@@ -1,0 +1,41 @@
+
+---------------------------------------------------------------------------------------------------------------------------
+Open the document below (There is a link to the file below in the Solution\Solution Items)
+C:\Thermo\Chromeleon\DDK Documentation\Release Notes - Chromeleon 7 DDK.pdf
+
+Go to page 5
+1.6 Further Preparations
+and follow the steps described in "Add the Chromeleon DDK V2 components to Visual Studio Toolbox""
+
+---------------------------------------------------------------------------------------------------------------------------
+Project references
+C:\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.Helpers.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.CommonPages.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.Driver.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.Components.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.Symbols.dll
+
+---------------------------------------------------------------------------------------------------------------------------
+Output folders
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoDetector
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoHeater
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoPump
+
+---------------------------------------------------------------------------------------------------------------------------
+Debug - Set startup project Properties\Debug\Start external program
+C:\Thermo\Chromeleon\Bin\Chromeleon.exe
+
+---------------------------------------------------------------------------------------------------------------------------
+Sign the driver. Add the lines below in the project's Properties \ Build Events \ Post builds event command line:
+
+"$(TargetDir)..\..\..\..\..\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder=$(TargetDir)
+
+  "C:\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder=C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoDetector\
+  "C:\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder=C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoHeater\
+  "C:\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder=C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoPump\
+
+or with quotes in -driverfolder value - in this case the last backslash '\' must not be present
+  "C:\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder="C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoDetector"
+  "C:\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder="C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoHeater"
+  "C:\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder="C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoPump"

@@ -1,0 +1,44 @@
+﻿
+---------------------------------------------------------------------------------------------------------------
+-- Debug
+-----------------------------
+Attach the debugger to
+C:\Thermo\Chromeleon\Bin\InstrumentConfiguration.exe
+
+or
+
+public MainForm()
+{
+    Debugger.Launch();
+
+---------------------------------------------------------------------------------------------------------------
+Project references
+    C:\Thermo\Chromeleon\Bin\DDK\V1\CmDDK.dll
+	C:\Thermo\Chromeleon\Bin\DDK\V1\CmHelpers.dll                              // CmHelpers.UnitConversion.PhysUnitEnum / PhysUnitConvert, CmHelpers.UnitConversionEx.PhysUnitConvert
+	C:\Thermo\Chromeleon\Bin\DDK\Shared\ThermoFisher\Dionex.PhysicalUnits.dll  // Dionex.Common.PhysicalUnits.GetLocalizedName
+	C:\Thermo\Chromeleon\Bin\DDK\V1\CmSymbols.dll  // For the Log class
+
+	Set referenced assemblies Property "Copy Local" to False
+
+---------------------------------------------------------------------------------------------------------------
+When reading \ saving numbers use CultureInfo.InvariantCulture
+
+	string text = value.ToString(CultureInfo.InvariantCulture);
+
+	int   .TryParse(text, NumberStyles.Any, CultureInfo.InvariantCulture, out result)
+	double.TryParse(text, NumberStyles.Any, CultureInfo.InvariantCulture, out result)
+
+---------------------------------------------------------------------------------------------------------------
+Conversion & Localization
+using CmHelpers;
+
+// The configuration must save the value with the unit that the device was made for (Psi in this example) and when displaying convert the value to the unit the user wants
+const double valuePsi = 100;
+double valueMegaPascal = UnitConversionEx.PhysUnitConvert(UnitConversion.PhysUnitEnum.PhysUnit_Psi, UnitConversion.PhysUnitEnum.PhysUnit_MegaPascal, valuePsi);
+double valueBar        = UnitConversionEx.PhysUnitConvert(UnitConversion.PhysUnitEnum.PhysUnit_Psi, UnitConversion.PhysUnitEnum.PhysUnit_Bar,        valuePsi);
+
+// Not localized
+string unitPsi = UnitConversionEx.PhysUnitLatin(UnitConversion.PhysUnitEnum.PhysUnit_Psi);  // psi
+
+// Localized
+string unitPsiLocalized = UnitConversionEx.PhysUnitName(UnitConversion.PhysUnitEnum.PhysUnit_Psi);

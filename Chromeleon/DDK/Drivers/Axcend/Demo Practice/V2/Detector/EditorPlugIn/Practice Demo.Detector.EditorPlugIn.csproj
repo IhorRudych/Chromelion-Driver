@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60DC0771-2C38-43C5-AD3F-A6908E6FCE32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCompany.Demo.Detector.EditorPlugIn</RootNamespace>
+    <AssemblyName>MyCompany.Demo.Detector.EditorPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\DDK\V2\Drivers\MyCompany\DemoDetector\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\DDK\V2\Drivers\MyCompany\DemoDetector\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dionex.DDK.Helpers">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.Helpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.CommonPages">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.CommonPages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.Driver">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor.Components">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.Components.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.Symbols">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.Symbols.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Demo\V2\Common\Common.cs">
+      <Link>Common.cs</Link>
+    </Compile>
+    <Compile Include="DetectorPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetectorPage.Designer.cs">
+      <DependentUpon>DetectorPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlugIn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DetectorPage.resx">
+      <DependentUpon>DetectorPage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(TargetDir)..\..\..\..\..\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder=$(TargetDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

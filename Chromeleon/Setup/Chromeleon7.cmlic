@@ -1,0 +1,39 @@
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="#LicenseInfo">
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>jP61edrY6RZ9iXmJsc+stRGUQuQ=</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>Rjm4M8QCIhXxrZo0gtv/+FFtlYQqi7tqnDaNBV89XNObww9H/K+w2PVDxtq7ZXVCtBBwiEezUIIkb4IWPupJMPO9Kpf/Q52yMhH7MnbHrbY5btXPsIrjI98I4xvsNd81cAR6Lv2rQ6BktPZJZEAS2OSWJny/yl7rqX9Uy6qfPqg=</SignatureValue>
+  <Object Id="LicenseInfo">
+    <ChromeleonLicense SerialNumber="111116" xmlns="">
+      <ExpirationDate>2019-03-29 23:00:00Z</ExpirationDate>
+      <ChromeleonVersion Build="CM7.2" Major="7" Minor="2">
+        <LicenseFeature Name="ComplianceTools" Description="Compliance Tools" Count="8" />
+        <LicenseFeature Name="ThreeDimensionalDataAcquisition" Description="3D Data Acquisition" Count="8" />
+        <LicenseFeature Name="XPSOperation" Description="Chromeleon XPS" Count="35" />
+        <LicenseFeature Name="VirtualColumnLinearGradient" Description="Virtual Column Linear Gradient" Count="6" />
+        <LicenseFeature Name="NonTargetedMsDataProcessing" Description="Non-Targeted MS Data Processing" Count="5" />
+        <LicenseFeature Name="IntactProteinDeconvolution" Description="Intact Protein Deconvolution" Count="5" />
+        <LicenseFeature Name="InstrumentClassOne" Description="Instrument Class1" Count="30" />
+        <LicenseFeature Name="InstrumentClassTwo" Description="Instrument Class2" Count="36" />
+        <LicenseFeature Name="ICS_2x00_GradientGeneration" Description="ICS 2x00 Gradient Generation" Count="6" />
+        <LicenseFeature Name="InstrumentClassThree" Description="Instrument Class3" Count="13" />
+        <LicenseFeature Name="SqTqGcMsDataAcquisition" Description="SQ / QqQ GC-MS Data Acquisition" Count="5" />
+        <LicenseFeature Name="VirtualColumnIsocratic" Description="Virtual Column Isocratic" Count="6" />
+        <LicenseFeature Name="InstrumentController" Description="Instrument Controller" Count="6" />
+        <LicenseFeature Name="InstrumentOperation" Description="Instrument Operation" Count="8" />
+        <LicenseFeature Name="DDKDeveloper" Description="DDK Developer" Count="1" />
+        <LicenseFeature Name="SdkDeveloper" Description="SDK Developer" Count="1" />
+        <LicenseFeature Name="FractionCollection" Description="Fraction Collection" Count="5" />
+        <LicenseFeature Name="LcMsDataAcquisition" Description="LC-MS Data Acquisition" Count="5" />
+        <LicenseFeature Name="SdkRuntime" Description="SDK Runtime" Count="8" />
+        <LicenseFeature Name="DataClient" Description="Data Client" Count="8" />
+        <LicenseFeature Name="ReportDesignerPro" Description="Report Designer Pro" Count="8" />
+      </ChromeleonVersion>
+    </ChromeleonLicense>
+  </Object>
+</Signature>

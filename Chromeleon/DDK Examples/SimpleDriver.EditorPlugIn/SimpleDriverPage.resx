@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_LabelMyDoubleProperty.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_LabelMyDoubleProperty.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_LabelMyDoubleProperty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 33</value>
+  </data>
+  <data name="m_LabelMyDoubleProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="m_LabelMyDoubleProperty.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_LabelMyDoubleProperty.Text" xml:space="preserve">
+    <value>&amp;MyDouble property value:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyDoubleProperty.Name" xml:space="preserve">
+    <value>m_LabelMyDoubleProperty</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyDoubleProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyDoubleProperty.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyDoubleProperty.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="m_TextBoxMyDoubleProperty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 30</value>
+  </data>
+  <data name="m_TextBoxMyDoubleProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="m_TextBoxMyDoubleProperty.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyDoubleProperty.Name" xml:space="preserve">
+    <value>m_TextBoxMyDoubleProperty</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyDoubleProperty.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyDoubleProperty.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyDoubleProperty.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="m_RangeMyDoubleProperty.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeMyDoubleProperty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 33</value>
+  </data>
+  <data name="m_RangeMyDoubleProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeMyDoubleProperty.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_RangeMyDoubleProperty.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyDoubleProperty.Name" xml:space="preserve">
+    <value>m_RangeMyDoubleProperty</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyDoubleProperty.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyDoubleProperty.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyDoubleProperty.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="m_LabelType1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelType1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 133</value>
+  </data>
+  <data name="m_LabelType1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="m_LabelType1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="m_LabelType1.Text" xml:space="preserve">
+    <value>Type&amp;1Property:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType1.Name" xml:space="preserve">
+    <value>m_LabelType1</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="m_LabelType2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelType2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelType2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 165</value>
+  </data>
+  <data name="m_LabelType2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="m_LabelType2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="m_LabelType2.Text" xml:space="preserve">
+    <value>Type&amp;2Property:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType2.Name" xml:space="preserve">
+    <value>m_LabelType2</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType2.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="m_LabelType3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelType3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelType3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 197</value>
+  </data>
+  <data name="m_LabelType3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="m_LabelType3.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="m_LabelType3.Text" xml:space="preserve">
+    <value>Type&amp;3Property:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType3.Name" xml:space="preserve">
+    <value>m_LabelType3</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType3.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="m_LabelType6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelType6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelType6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 293</value>
+  </data>
+  <data name="m_LabelType6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="m_LabelType6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="m_LabelType6.Text" xml:space="preserve">
+    <value>Type&amp;6Property:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType6.Name" xml:space="preserve">
+    <value>m_LabelType6</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType6.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="m_LabelType5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelType5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelType5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 261</value>
+  </data>
+  <data name="m_LabelType5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="m_LabelType5.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="m_LabelType5.Text" xml:space="preserve">
+    <value>Type&amp;5Property:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType5.Name" xml:space="preserve">
+    <value>m_LabelType5</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType5.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="m_LabelType4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelType4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelType4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 229</value>
+  </data>
+  <data name="m_LabelType4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="m_LabelType4.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="m_LabelType4.Text" xml:space="preserve">
+    <value>Type&amp;4Property:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType4.Name" xml:space="preserve">
+    <value>m_LabelType4</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelType4.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="m_ComboBoxType3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 194</value>
+  </data>
+  <data name="m_ComboBoxType3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="m_ComboBoxType3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType3.Name" xml:space="preserve">
+    <value>m_ComboBoxType3</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType3.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepComboBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="m_ComboBoxType4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 226</value>
+  </data>
+  <data name="m_ComboBoxType4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="m_ComboBoxType4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType4.Name" xml:space="preserve">
+    <value>m_ComboBoxType4</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType4.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepComboBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="m_ComboBoxType6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 290</value>
+  </data>
+  <data name="m_ComboBoxType6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="m_ComboBoxType6.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType6.Name" xml:space="preserve">
+    <value>m_ComboBoxType6</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType6.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepComboBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxType6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="m_RangeType1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeType1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 133</value>
+  </data>
+  <data name="m_RangeType1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeType1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="m_RangeType1.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType1.Name" xml:space="preserve">
+    <value>m_RangeType1</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType1.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="m_RangeType2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeType2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_RangeType2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 165</value>
+  </data>
+  <data name="m_RangeType2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeType2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="m_RangeType2.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType2.Name" xml:space="preserve">
+    <value>m_RangeType2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType2.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="m_RangeType3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeType3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_RangeType3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 197</value>
+  </data>
+  <data name="m_RangeType3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeType3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="m_RangeType3.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType3.Name" xml:space="preserve">
+    <value>m_RangeType3</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType3.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="m_RangeType4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeType4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_RangeType4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 229</value>
+  </data>
+  <data name="m_RangeType4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeType4.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="m_RangeType4.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType4.Name" xml:space="preserve">
+    <value>m_RangeType4</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType4.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="m_RangeType5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeType5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_RangeType5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 261</value>
+  </data>
+  <data name="m_RangeType5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeType5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="m_RangeType5.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType5.Name" xml:space="preserve">
+    <value>m_RangeType5</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType5.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="m_RangeType6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeType6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_RangeType6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 293</value>
+  </data>
+  <data name="m_RangeType6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeType6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="m_RangeType6.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType6.Name" xml:space="preserve">
+    <value>m_RangeType6</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType6.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeType6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="m_TextBoxType1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 130</value>
+  </data>
+  <data name="m_TextBoxType1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="m_TextBoxType1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType1.Name" xml:space="preserve">
+    <value>m_TextBoxType1</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType1.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="m_TextBoxType2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 162</value>
+  </data>
+  <data name="m_TextBoxType2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="m_TextBoxType2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType2.Name" xml:space="preserve">
+    <value>m_TextBoxType2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType2.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="m_LabelMyIntProperty.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelMyIntProperty.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelMyIntProperty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 65</value>
+  </data>
+  <data name="m_LabelMyIntProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="m_LabelMyIntProperty.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="m_LabelMyIntProperty.Text" xml:space="preserve">
+    <value>M&amp;yInt property value:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyIntProperty.Name" xml:space="preserve">
+    <value>m_LabelMyIntProperty</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyIntProperty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyIntProperty.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMyIntProperty.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="m_TextBoxMyIntProperty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 62</value>
+  </data>
+  <data name="m_TextBoxMyIntProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="m_TextBoxMyIntProperty.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyIntProperty.Name" xml:space="preserve">
+    <value>m_TextBoxMyIntProperty</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyIntProperty.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyIntProperty.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxMyIntProperty.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="m_RangeMyIntProperty.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeMyIntProperty.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_RangeMyIntProperty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 65</value>
+  </data>
+  <data name="m_RangeMyIntProperty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeMyIntProperty.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="m_RangeMyIntProperty.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyIntProperty.Name" xml:space="preserve">
+    <value>m_RangeMyIntProperty</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyIntProperty.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyIntProperty.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeMyIntProperty.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="m_TextBoxType5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 258</value>
+  </data>
+  <data name="m_TextBoxType5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="m_TextBoxType5.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType5.Name" xml:space="preserve">
+    <value>m_TextBoxType5</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType5.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxType5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="m_SepLineMyProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="m_SepLineMyProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>594, 23</value>
+  </data>
+  <data name="m_SepLineMyProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="m_SepLineMyProperties.Text" xml:space="preserve">
+    <value>First Section</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineMyProperties.Name" xml:space="preserve">
+    <value>m_SepLineMyProperties</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineMyProperties.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.SeparatorLine, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineMyProperties.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineMyProperties.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_SepLineTypeProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 103</value>
+  </data>
+  <data name="m_SepLineTypeProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>594, 23</value>
+  </data>
+  <data name="m_SepLineTypeProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="m_SepLineTypeProperties.Text" xml:space="preserve">
+    <value>Second Section</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTypeProperties.Name" xml:space="preserve">
+    <value>m_SepLineTypeProperties</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTypeProperties.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.SeparatorLine, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTypeProperties.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTypeProperties.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 450</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SimpleDriverPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

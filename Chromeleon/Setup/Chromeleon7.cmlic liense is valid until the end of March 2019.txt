@@ -1,0 +1,5 @@
+.NET 3.5
+.NET 4.6.1
+
+Examples
+C:\Users\Public\Documents\Thermo\Chromeleon\DDK Examples\

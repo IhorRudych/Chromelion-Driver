@@ -1,0 +1,125 @@
+﻿
+---------------------------------------------------------------------------------------------------------------
+-- Folders
+---------------------------------------------------------------------------------------------------------------
+Chromeleon default installation folder:
+C:\Program Files (x86)\Thermo\Chromeleon\Bin\
+
+Install Chromeleon in folder (this will be the folder used from now on):
+C:\Thermo\Chromeleon\Bin\				(linked to for internal developers C:\CM7\Trunk\Output\Debug\)
+
+Data
+C:\ProgramData\Dionex\Chromeleon\
+    Chromeleon7.cmlic - license file
+    InstrumentControllerConfiguration.cmic - instruments configurations file
+
+ePanels Selectors
+C:\Thermo\Chromeleon\Bin\ePanelSelectors
+
+ePanels
+C:\Thermo\Chromeleon\Bin\ePanelTemplates
+
+Saved Edited ePanels
+C:\ProgramData\Dionex\Chromeleon\ePanels\Domain
+
+Chromeleon Log folder
+C:\ProgramData\Dionex\Chromeleon\Log\
+
+Driver MyCompany.Demo Log folder
+C:\ProgramData\Dionex\Chromeleon\Log\MyCompany.Demo\
+
+DDK Examples
+C:\Users\Public\Documents\Thermo\Chromeleon\DDK Examples\
+    CmDDKExamples.sln
+    CmDDKExamplesDist.sln
+
+---------------------------------------------------------------------------------------------------------------
+Terminology:
+Old                | New
+-------------------+----------------
+Timebase           | Instrument
+Batch              | Queue
+Sample             | Injection
+Tray               | Rack
+Manual Acquisition | Monitor Baseline
+Program (PGM)      | Instrument Method (IM)
+Server             | Instrument Controller
+
+---------------------------------------------------------------------------------------------------------------
+Company name: MyCompany
+Driver  name: Demo
+
+1. Project Target Framework - .NET Framework 3.5
+2. Project output folder
+   C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo
+
+3. Project references:
+	C:\Thermo\Chromeleon\Bin\DDK\V1\CmDDK.dll
+	C:\Thermo\Chromeleon\Bin\DDK\V1\CmHelpers.dll                              // CmHelpers.UnitConversion.PhysUnitEnum / PhysUnitConvert, CmHelpers.UnitConversionEx.PhysUnitConvert - see beloe Conversion & Localization
+	C:\Thermo\Chromeleon\Bin\DDK\V1\CmSymbols.dll
+	C:\Thermo\Chromeleon\Bin\DDK\V1\CmSymbolsExtensions.dll
+	C:\Thermo\Chromeleon\Bin\DDK\Shared\ThermoFisher\Dionex.PhysicalUnits.dll  // Dionex.Common.PhysicalUnits.GetLocalizedName
+
+	Set referenced assemblies Property "Copy Local" to False
+
+4. Create DriverInfo.resx and the following strings:
+	DeviceManufacturer		MyCompany
+	FriendlyName			Demo
+	ManufacturerSubgroup	Group
+
+5. Sign the driver. Add the lines below in the project's Properties \ Build Events \ Post builds event command line:
+
+@rem C:\Thermo\Chromeleon\Bin
+Set Src=$(TargetDir)..\..\..\..\..
+
+@rem C:\Thermo\Chromeleon\DDK\V1\Drivers\MyCompany\Demo\Driver\ePanels
+Set Dst=$(ProjectDir)ePanel
+
+if Not Exist "%Dst%" (
+			MD "%Dst%"
+)
+
+@rem C:\Thermo\Chromeleon\Bin\ePanelSelectors\
+Copy /Y "%Src%\ePanelSelectors\MyCompany.Demo*.xsl" "%Dst%\"
+
+@rem C:\Thermo\Chromeleon\Bin\ePanelTemplates\
+Copy /Y "%Src%\ePanelTemplates\MyCompany.Demo*.panx" "%Dst%\"
+
+@rem C:\Thermo\Chromeleon\Bin\DDK\DriverSignatureDDKV1.exe
+"%Src%\DDK\DriverSignatureDDKV1.exe" -timebaseclass=1 -verbose=true -driverfolder="$(TargetDir)"
+
+	--------------------------------------------------------------------------------------------
+    "C:\Thermo\Chromeleon\Bin\DDK\DriverSignatureDDKV1.exe" -timebaseclass=1 -verbose=true -driverfolder="C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\"
+
+    -timebaseclass=1 - manufacturer classes (MFClass) - TimeBase = Instrument
+	1 - Drivers developed by one of the Thermo Fisher Scientific CM software teams.
+	2 - Drivers developed by external teams on behalf of Thermo Fisher Scientific.
+	3 - Drivers developed by external software teams. Deployment and support is provided by the driver manufacturer.
+
+6. Debug
+	Exception Setting (Ctrl+Alt+E) - Enable stop on exceptions Common Language Runtime Exceptions
+
+    Debugger.Launch();
+
+	void DebuggerBreak
+	void DebuggerBreakIfIsAttached
+
+	The driver is hosted in a separate process CmDDKHost.exe
+	in the Windows Task Manager get the desired CmDDKHost.exe process ID
+	Attach the VS debugger to CmDDKHost.exe
+	VS 2013 only: In "Attached to" Select: Managed (v3.5, v3.0, v2.0) code, Native code (Native code for C++)
+
+---------------------------------------------------------------------------------------------------------------
+Conversion & Localization
+using CmHelpers;
+
+// The configuration must save the value with the unit that the device was made for (Psi in this example) and when displaying convert the value to the unit the user wants
+const double valuePsi = 100;
+double valueMegaPascal = UnitConversionEx.PhysUnitConvert(UnitConversion.PhysUnitEnum.PhysUnit_Psi, UnitConversion.PhysUnitEnum.PhysUnit_MegaPascal, valuePsi);
+double valueBar        = UnitConversionEx.PhysUnitConvert(UnitConversion.PhysUnitEnum.PhysUnit_Psi, UnitConversion.PhysUnitEnum.PhysUnit_Bar,        valuePsi);
+
+// Not localized
+string unitPsi = UnitConversionEx.PhysUnitLatin(UnitConversion.PhysUnitEnum.PhysUnit_Psi);  // psi
+
+// Localized
+string unitPsiLocalized = UnitConversionEx.PhysUnitName(UnitConversion.PhysUnitEnum.PhysUnit_Psi);

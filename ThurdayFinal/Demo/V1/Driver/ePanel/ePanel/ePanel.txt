@@ -1,0 +1,20 @@
+﻿Saved Edited ePanels
+C:\ProgramData\Dionex\Chromeleon\ePanels\Domain\
+
+Before your start working with the project
+Copy/Y C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\ePanel\MyCompany.Demo.xsl   C:\Thermo\Chromeleon\Bin\ePanelSelectors
+Copy/Y C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\ePanel\MyCompany.Demo*.panx C:\Thermo\Chromeleon\Bin\ePanelTemplates
+
+After that, every time the project is recompiled it will copy from the files on reverse:
+from C:\Thermo\Chromeleon\Bin\ to C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\ePanel\
+
+
+ePanel Visual Editor Control Properties Macros
+
+(Exists($CDM.Connected) And Not $CDM.Connected) Or (Exists($CDM.Connected) And $CDM.CommunicationState=Communicating)
+
+Not $DeviceA.Temperature.Control or
+    $DeviceA.Temperature.Control <> 0
+
+Exists($DeviceA.Temperature.Control)
+Exists($DeviceA.Temperature.Control) And $DeviceA.Temperature.Control

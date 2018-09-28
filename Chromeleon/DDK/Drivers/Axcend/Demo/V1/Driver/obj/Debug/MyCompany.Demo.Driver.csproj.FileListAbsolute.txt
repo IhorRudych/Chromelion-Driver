@@ -1,0 +1,17 @@
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.DriverInfo.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Properties.Resources.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Driver.csproj.GenerateResource.cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Driver.csproj.CoreCompileInputs.cache
+C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\MyCompany.Demo.bmp
+C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\MyCompany.Demo.dll
+C:\Thermo\Chromeleon\Bin\DDK\V1\Drivers\MyCompany\Demo\MyCompany.Demo.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Driver.csproj.CopyComplete
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.dll
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo\V1\Driver\obj\Debug\MyCompany.Demo.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.dll
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.DriverInfo.resources
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Properties.Resources.resources
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Driver.csproj.GenerateResource.cache
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Driver.csproj.CoreCompileInputs.cache
+C:\Thermo\Chromeleon\DDK\Drivers\Axcend\Demo\V1\Driver\obj\Debug\MyCompany.Demo.Driver.csproj.CopyComplete

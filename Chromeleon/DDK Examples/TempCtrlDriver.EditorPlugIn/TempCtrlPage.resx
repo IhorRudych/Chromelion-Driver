@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_SepLineTemperatureControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="m_SepLineTemperatureControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>594, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_SepLineTemperatureControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_SepLineTemperatureControl.Text" xml:space="preserve">
+    <value>Temperature Control Settings</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTemperatureControl.Name" xml:space="preserve">
+    <value>m_SepLineTemperatureControl</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTemperatureControl.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.SeparatorLine, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTemperatureControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_SepLineTemperatureControl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="m_CheckBoxTemperatureControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_CheckBoxTemperatureControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 38</value>
+  </data>
+  <data name="m_CheckBoxTemperatureControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 17</value>
+  </data>
+  <data name="m_CheckBoxTemperatureControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_CheckBoxTemperatureControl.Text" xml:space="preserve">
+    <value>&amp;Temperature control</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxTemperatureControl.Name" xml:space="preserve">
+    <value>m_CheckBoxTemperatureControl</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxTemperatureControl.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepCheckBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxTemperatureControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxTemperatureControl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="m_LabelTemperatureNominal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelTemperatureNominal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 70</value>
+  </data>
+  <data name="m_LabelTemperatureNominal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="m_LabelTemperatureNominal.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_LabelTemperatureNominal.Text" xml:space="preserve">
+    <value>&amp;Nominal:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureNominal.Name" xml:space="preserve">
+    <value>m_LabelTemperatureNominal</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureNominal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureNominal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureNominal.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="m_LabelTemperatureLowerLimit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelTemperatureLowerLimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 102</value>
+  </data>
+  <data name="m_LabelTemperatureLowerLimit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="m_LabelTemperatureLowerLimit.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="m_LabelTemperatureLowerLimit.Text" xml:space="preserve">
+    <value>&amp;Lower limit:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureLowerLimit.Name" xml:space="preserve">
+    <value>m_LabelTemperatureLowerLimit</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureLowerLimit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureLowerLimit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureLowerLimit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="m_LabelTemperatureUpperLimit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelTemperatureUpperLimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 134</value>
+  </data>
+  <data name="m_LabelTemperatureUpperLimit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="m_LabelTemperatureUpperLimit.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="m_LabelTemperatureUpperLimit.Text" xml:space="preserve">
+    <value>&amp;Upper limit:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureUpperLimit.Name" xml:space="preserve">
+    <value>m_LabelTemperatureUpperLimit</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureUpperLimit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureUpperLimit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTemperatureUpperLimit.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="m_TextBoxTemperatureNominal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 67</value>
+  </data>
+  <data name="m_TextBoxTemperatureNominal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="m_TextBoxTemperatureNominal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureNominal.Name" xml:space="preserve">
+    <value>m_TextBoxTemperatureNominal</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureNominal.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureNominal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureNominal.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="m_TextBoxTemperatureLowerLimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 99</value>
+  </data>
+  <data name="m_TextBoxTemperatureLowerLimit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="m_TextBoxTemperatureLowerLimit.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureLowerLimit.Name" xml:space="preserve">
+    <value>m_TextBoxTemperatureLowerLimit</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureLowerLimit.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureLowerLimit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureLowerLimit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="m_TextBoxTemperatureUpperLimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 131</value>
+  </data>
+  <data name="m_TextBoxTemperatureUpperLimit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="m_TextBoxTemperatureUpperLimit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureUpperLimit.Name" xml:space="preserve">
+    <value>m_TextBoxTemperatureUpperLimit</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureUpperLimit.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyStepTextBox, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureUpperLimit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxTemperatureUpperLimit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="m_RangeTemperatureNominal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeTemperatureNominal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 70</value>
+  </data>
+  <data name="m_RangeTemperatureNominal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeTemperatureNominal.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="m_RangeTemperatureNominal.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureNominal.Name" xml:space="preserve">
+    <value>m_RangeTemperatureNominal</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureNominal.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureNominal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureNominal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="m_RangeTemperatureLowerLimit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeTemperatureLowerLimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 102</value>
+  </data>
+  <data name="m_RangeTemperatureLowerLimit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeTemperatureLowerLimit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="m_RangeTemperatureLowerLimit.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureLowerLimit.Name" xml:space="preserve">
+    <value>m_RangeTemperatureLowerLimit</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureLowerLimit.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureLowerLimit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureLowerLimit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_RangeTemperatureUpperLimit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RangeTemperatureUpperLimit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 134</value>
+  </data>
+  <data name="m_RangeTemperatureUpperLimit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="m_RangeTemperatureUpperLimit.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="m_RangeTemperatureUpperLimit.Text" xml:space="preserve">
+    <value>[012...456 xx]</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureUpperLimit.Name" xml:space="preserve">
+    <value>m_RangeTemperatureUpperLimit</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureUpperLimit.Type" xml:space="preserve">
+    <value>Dionex.Chromeleon.DDK.V2.InstrumentMethodEditor.Components.PropertyRangeLabel, Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureUpperLimit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_RangeTemperatureUpperLimit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 450</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TempCtrlPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

@@ -1,0 +1,6 @@
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoDetector\MyCompany.Demo.Detector.EditorPlugIn.dll
+C:\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\DemoDetector\MyCompany.Demo.Detector.EditorPlugIn.pdb
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V2\Detector\EditorPlugIn\obj\Debug\MyCompany.Demo.Detector.EditorPlugIn.DetectorPage.resources
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V2\Detector\EditorPlugIn\obj\Debug\Practice Demo.Detector.EditorPlugIn.csproj.GenerateResource.Cache
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V2\Detector\EditorPlugIn\obj\Debug\MyCompany.Demo.Detector.EditorPlugIn.dll
+C:\Thermo\Chromeleon\DDK\Drivers\MyCompany\Demo Practice\V2\Detector\EditorPlugIn\obj\Debug\MyCompany.Demo.Detector.EditorPlugIn.pdb

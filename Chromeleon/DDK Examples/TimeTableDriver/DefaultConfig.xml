@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<Driver>
+		<Device name="Time Table Device">
+			<Parameter name="Device Name">TimeTableDevice</Parameter>
+		</Device>
+	</Driver>
+</Configuration>

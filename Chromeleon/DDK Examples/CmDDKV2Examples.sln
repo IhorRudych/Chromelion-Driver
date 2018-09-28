@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelTest.EditorPlugIn", "ChannelTest.EditorPlugIn\ChannelTest.EditorPlugIn.csproj", "{44844608-6C03-4694-90B7-511FB7D54E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleLCSystem.EditorPlugIn", "ExampleLCSystem.EditorPlugIn\ExampleLCSystem.EditorPlugIn.csproj", "{BC326CA3-7A21-49BD-BA51-074190689BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDriver.EditorPlugIn", "SimpleDriver.EditorPlugIn\SimpleDriver.EditorPlugIn.csproj", "{16CB2B46-AE6B-4DA3-A3A6-FCC08FC55F9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempCtrlDriver.EditorPlugIn", "TempCtrlDriver.EditorPlugIn\TempCtrlDriver.EditorPlugIn.csproj", "{8B2F2971-AA1B-4D11-9BF3-A557D3F183EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBlockDriver.EditorPlugIn", "BlobDataDriver.EditorPlugIn\DataBlockDriver.EditorPlugIn.csproj", "{C9BF9212-1BE3-4DAD-A0A8-A017C67C551E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTableDriver.EditorPlugIn", "TimeTableDriver.EditorPlugIn\TimeTableDriver.EditorPlugIn.csproj", "{1AE74C3D-CCC0-49C0-9E3F-CFDF39EBC69B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44844608-6C03-4694-90B7-511FB7D54E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44844608-6C03-4694-90B7-511FB7D54E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44844608-6C03-4694-90B7-511FB7D54E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44844608-6C03-4694-90B7-511FB7D54E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC326CA3-7A21-49BD-BA51-074190689BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC326CA3-7A21-49BD-BA51-074190689BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC326CA3-7A21-49BD-BA51-074190689BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC326CA3-7A21-49BD-BA51-074190689BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CB2B46-AE6B-4DA3-A3A6-FCC08FC55F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CB2B46-AE6B-4DA3-A3A6-FCC08FC55F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CB2B46-AE6B-4DA3-A3A6-FCC08FC55F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CB2B46-AE6B-4DA3-A3A6-FCC08FC55F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2F2971-AA1B-4D11-9BF3-A557D3F183EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2F2971-AA1B-4D11-9BF3-A557D3F183EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2F2971-AA1B-4D11-9BF3-A557D3F183EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2F2971-AA1B-4D11-9BF3-A557D3F183EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BF9212-1BE3-4DAD-A0A8-A017C67C551E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BF9212-1BE3-4DAD-A0A8-A017C67C551E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BF9212-1BE3-4DAD-A0A8-A017C67C551E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BF9212-1BE3-4DAD-A0A8-A017C67C551E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE74C3D-CCC0-49C0-9E3F-CFDF39EBC69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE74C3D-CCC0-49C0-9E3F-CFDF39EBC69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE74C3D-CCC0-49C0-9E3F-CFDF39EBC69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE74C3D-CCC0-49C0-9E3F-CFDF39EBC69B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

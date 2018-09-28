@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Driver>
+    <Device name="Send/Receive Device">
+      <Parameter description="Just a name for the device" name="Device Name">SendReceiveDevice</Parameter>
+    </Device>
+  </Driver>
+</Configuration>

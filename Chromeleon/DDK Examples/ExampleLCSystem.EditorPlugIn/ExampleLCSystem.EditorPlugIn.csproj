@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC326CA3-7A21-49BD-BA51-074190689BEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dionex.DDK.V2.ExampleLCSystem.EditorPlugIn</RootNamespace>
+    <AssemblyName>Dionex.DDK.V2.ExampleLCSystem.EditorPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dionex.DDK.V2.Driver, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor.Components, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.Components.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.Symbols, Version=2.4.0.0, Culture=neutral, PublicKeyToken=f1413f165c7768f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Dionex.DDK.V2.Symbols.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DetectorPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetectorPage.Designer.cs">
+      <DependentUpon>DetectorPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PumpGeneralPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PumpGeneralPage.Designer.cs">
+      <DependentUpon>PumpGeneralPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlugIn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DetectorPage.resx">
+      <DependentUpon>DetectorPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PumpGeneralPage.resx">
+      <DependentUpon>PumpGeneralPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>md  "C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\ExampleLCSystem"
+
+copy $(TargetName).dll "C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\ExampleLCSystem\"
+copy $(TargetName).pdb "C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\ExampleLCSystem\"
+
+"C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\DriverSignature.exe" -driverfolder="C:\Program Files (x86)\Thermo\Chromeleon\Bin\DDK\V2\Drivers\MyCompany\ExampleLCSystem " -timebaseclass=1 -verbose=true
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

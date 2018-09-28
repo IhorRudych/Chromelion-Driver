@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AFC9549-57EE-41FE-B86F-DA3962E2825D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCompany.Demo.Heater.EditorPlugIn</RootNamespace>
+    <AssemblyName>MyCompany.Demo.Heater.EditorPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\DDK\V2\Drivers\MyCompany\DemoHeater\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\DDK\V2\Drivers\MyCompany\DemoHeater\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dionex.DDK.Helpers">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.Helpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.CommonPages">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.CommonPages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.Driver">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.Driver.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.InstrumentMethodEditor.Components">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.InstrumentMethodEditor.Components.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Dionex.DDK.V2.Symbols">
+      <HintPath>..\..\..\..\..\..\..\Bin\DDK\V2\Dionex.DDK.V2.Symbols.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Demo\V2\Common\Common.cs">
+      <Link>Common.cs</Link>
+    </Compile>
+    <Compile Include="HeaterPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HeaterPage.Designer.cs">
+      <DependentUpon>HeaterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlugIn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HeaterPage.resx">
+      <DependentUpon>HeaterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\Demo\V2\Heater\EditorPlugIn\Properties\Heater.ico">
+      <Link>Properties\Heater.ico</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(TargetDir)..\..\..\..\..\DDK\V2\DriverSignature.exe" -timebaseclass=1 -verbose=true -driverfolder=$(TargetDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

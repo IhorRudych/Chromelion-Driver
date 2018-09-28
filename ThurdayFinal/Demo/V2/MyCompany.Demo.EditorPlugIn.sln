@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Detector.EditorPlugIn", "Detector\EditorPlugIn\Demo.Detector.EditorPlugIn.csproj", "{60DC0771-2C38-43C5-AD3F-A6908E6FCE32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Heater.EditorPlugIn", "Heater\EditorPlugIn\Demo.Heater.EditorPlugIn.csproj", "{4AFC9549-57EE-41FE-B86F-DA3962E2825D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Pump.EditorPlugIn", "Pump\EditorPlugIn\Demo.Pump.EditorPlugIn.csproj", "{6F6C76FB-D2E3-4F3D-A138-4CF7A9CF1211}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{29BC8906-FC7B-4215-AEE1-AA21655CCCE0}"
+	ProjectSection(SolutionItems) = preProject
+		Read Me.txt = Read Me.txt
+		..\..\..\..\..\DDK Documentation\Release Notes - Chromeleon 7 DDK.pdf = ..\..\..\..\..\DDK Documentation\Release Notes - Chromeleon 7 DDK.pdf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60DC0771-2C38-43C5-AD3F-A6908E6FCE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DC0771-2C38-43C5-AD3F-A6908E6FCE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DC0771-2C38-43C5-AD3F-A6908E6FCE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DC0771-2C38-43C5-AD3F-A6908E6FCE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFC9549-57EE-41FE-B86F-DA3962E2825D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFC9549-57EE-41FE-B86F-DA3962E2825D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFC9549-57EE-41FE-B86F-DA3962E2825D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFC9549-57EE-41FE-B86F-DA3962E2825D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6C76FB-D2E3-4F3D-A138-4CF7A9CF1211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6C76FB-D2E3-4F3D-A138-4CF7A9CF1211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6C76FB-D2E3-4F3D-A138-4CF7A9CF1211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6C76FB-D2E3-4F3D-A138-4CF7A9CF1211}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
